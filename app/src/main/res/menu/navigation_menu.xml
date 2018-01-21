@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_home"
+            android:icon="@mipmap/ic_home_black_24dp"
+            android:title="Home"/>
+        <item android:id="@+id/nav_UserBoxGLB"
+            android:icon="@mipmap/ic_public_black_24dp"
+            android:title="User Box (GLB)"/>
+        <item android:id="@+id/nav_UserBoxJP"
+            android:icon="@mipmap/ic_translate_black_24dp"
+            android:title="User Box (JP)"/>
+        <item android:id="@+id/nav_events"
+            android:icon="@mipmap/ic_event_black_24dp"
+            android:title="Events[N/A]"/>
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_feedback"
+            android:icon="@mipmap/ic_send_black_24dp"
+            android:title="Feedback"/>
+        <item android:id="@+id/nav_contact_us"
+            android:icon="@mipmap/ic_mail_outline_black_24dp"
+            android:title="Contact Us"/>
+        <item android:id="@+id/nav_website"
+            android:icon="@mipmap/ic_web_black_24dp"
+            android:title="Website"/>
+        <item android:id="@+id/dokkangamelink"
+            android:icon="@mipmap/ic_videogame_asset_black_24dp"
+            android:title="Get Dokkan Battle"/>
+        <!-- future update
+        <item android:id="@+id/settings"
+            android:icon="@mipmap/ic_settings_black_24dp"
+            android:title="Settings"/>
+            -->
+        <item android:id="@+id/nav_about"
+            android:icon="@mipmap/ic_info_outline_black_24dp"
+            android:title="About"/>
+            </group>
+</menu>

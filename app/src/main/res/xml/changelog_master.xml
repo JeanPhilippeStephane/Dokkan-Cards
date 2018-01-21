@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<changelog>
+    <release version="0.7.2" versioncode="7">
+        <change>Fixed a bug where the app would crash upon clicking on the last five cards</change>
+        <change>Corrected a bug where the wrong app version was displayed in the about page</change>
+        <change>Fixed a bug where the Copyright Disclaimer wasn't correctly displayed</change>
+        <change>Minor UI Adjustments</change>
+    </release>
+    <release version="0.7.1" versioncode="6">
+        <change>Fixed UI issues</change>
+        <change>Changed the dokkan logo in the toolbar with the app's logo</change>
+        <change>Changed the side-menu header's color</change>
+        <change>Changed the side-menu header's logo</change>
+        <change>Fixed a bunch of Bugs</change>
+        <change>Update the contributors page</change>
+        <change>Add the app icon to the about page</change>
+        <change>Compress the card icons and art images in order to reduce the app's size</change>
+        <change>Added HP,ATT and DEF stats for each [current] card in the database</change>
+        <change>Added a sorting icon with one -as of version 0.7- option "AVG Stats"</change>
+        <change>Added the "Third Party Libraries" page in the About section of the app</change>
+        <change>Replaced the old Card Details Background with an HD one</change>
+        <change>Added the COST stat for each [current] card in the database</change>
+    </release>
+</changelog>

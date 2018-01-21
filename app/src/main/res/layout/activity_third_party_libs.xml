@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Contributors_background"
+    tools:context="com.dcv.spdesigns.dokkancards.presenter.ContributorsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="192dp"
+            android:layout_marginStart="15dp"
+            android:background="@color/Contributors_background"
+            android:paddingTop="8dp"
+            android:text="Third Party Libraries"
+            android:textAlignment="viewStart"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/black"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="0dp"
+            android:background="#f0f0f0"
+            android:paddingTop="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="?dividerHorizontal"
+                android:orientation="vertical"
+                android:showDividers="middle">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#e8e8e8"
+                    android:fontFamily="sans-serif"
+                    android:paddingBottom="5dp"
+                    android:paddingStart="10dp"
+                    android:paddingTop="5dp"
+                    android:text="Android Support Library"
+                    android:textAlignment="viewStart"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#e8e8e8"
+                    android:fontFamily="sans-serif"
+                    android:paddingBottom="5dp"
+                    android:paddingStart="10dp"
+                    android:paddingTop="5dp"
+                    android:text="About Page Library  Medyo"
+                    android:textAlignment="viewStart"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#e8e8e8"
+                    android:fontFamily="sans-serif"
+                    android:paddingBottom="5dp"
+                    android:paddingStart="10dp"
+                    android:paddingTop="5dp"
+                    android:text="Gson Library by Google"
+                    android:textAlignment="viewStart"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#e8e8e8"
+                    android:fontFamily="sans-serif"
+                    android:paddingBottom="5dp"
+                    android:paddingStart="10dp"
+                    android:paddingTop="5dp"
+                    android:text="Material Intro Screen Library by TangoAgency"
+                    android:textAlignment="viewStart"
+                    android:textColor="@android:color/black"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#e8e8e8"
+                    android:fontFamily="sans-serif"
+                    android:paddingBottom="5dp"
+                    android:paddingStart="10dp"
+                    android:paddingTop="5dp"
+                    android:text="Android Design Support Library"
+                    android:textAlignment="viewStart"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#e8e8e8"
+                    android:fontFamily="sans-serif"
+                    android:paddingBottom="5dp"
+                    android:paddingStart="10dp"
+                    android:paddingTop="5dp"
+                    android:text="ckChangeLog  Library"
+                    android:textAlignment="viewStart"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

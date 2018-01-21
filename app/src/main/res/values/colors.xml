@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- MAIN SCREEN PALLET -->
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#FF303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- USER BOX GLB PALLET -->
+    <color name="colorPrimaryGLB">#016695</color>
+    <color name="colorSecondaryGLB">#0378ad</color>
+
+    <!-- USER BOX JP PALLET -->
+    <color name="colorPrimaryJP">#991b1b</color>
+    <color name="colorSecondaryJP">#9e2d2d</color>
+
+    <!-- NAVIGATION MENU PALLET -->
+    <color name="NavigationDrawerHeader">#3F51B5</color>
+    <color name="NavActionBarTextColor">#FFFFFF</color>
+
+    <!-- CARD DETAILS PALLET -->
+
+    <!-- ABOUT PAGE [SUB-PAGES] PALLET -->
+    <color name="Contributors_background">#b01818</color>
+
+    <!-- Tutorial PALLET -->
+    <color name="mainScreen">#283593</color>
+    <color name="long_tap">#0277BD</color>
+    <color name="side_menu">#27ae60</color>
+    <color name="auto_save">#2c3e50</color>
+    <color name="data_security">#34495e</color>
+    <color name="donations">#7f8c8d</color>
+    <color name="tutorial_end">#00838F</color>
+
+    <color name="white">#FFFFFF</color>
+</resources>

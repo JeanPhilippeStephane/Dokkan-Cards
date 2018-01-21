@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">Dokkan Cards</string>
+    <!-- ActionBarDrawerToggle Parameters -->
+    <string name="drawer_open">Open</string>
+    <string name="drawer_closed">Closed</string>
+    <!-- Card Details Text -->
+
+    <string name="email">spdesignsofficial@outlook.com</string>
+
+    <!-- DISCLAIMER -->
+    <string name="disclaimer"><b>COPYRIGHT DISCLAIMER AND WARRANTIES\n\n</b>
+This disclaimer governs the use of this Mobile Application (“Dokkan Cards”). By using this Mobile application, you accept this disclaimer in full.\n\n
+        <b>Copyright\n\n</b>
+Copyright in all material on this App, including the underlying HTML, Codes, text, illustrations, designs, icons, audio clips, video clips, documents, products, software and all other content (“Material”) is either owned by the SP Designs, or the respective Copyright Owners. The Material on the App is protected by the Copyright Act. None of the Material may be copied, reproduced, distributed, republished, downloaded, displayed, posted or transmitted in any form or by any means (“Use” or “Used”), without the prior written consent of the SP Designs or the respective Copyright Owners, where applicable. All third party text, illustrations, designs, icons, images, audio and video, trademarks and company names mentioned in our App are the property of their respective owners, who may not be affiliated with, connected to, or sponsored by us.\n\n
+        <b>Trademarks and Official Marks\n\n</b>
+All trademarks, except third party trademarks, on this App are the property of the SP Designs including registered or unregistered trademarks or official marks. Nothing on this App should be interpreted to grant any license to use any trademark or official mark without the express written permission of the SP Designs or the respective Trademark Owners.
+        <b>\n\nWarranties\n\n</b>
+The Material on this App is provided “as is” without warranties or conditions of any kind either expressed or implied.  To the fullest extent possible under applicable law, SP Designs disclaims all warranties and conditions, expressed or implied, including but not limited to, implied warranties or conditions of merchantability and fitness for a particular purpose, non-infringement or other violation of rights. SP Designs does not warrant or make any other representations regarding the use, accuracy, timelines, applicability, performance, security, availability of this App or any sites linked to this App, or the results from the use of this App or any sites linked to this App, or otherwise respecting the Material on this App or any sites linked to this App.
+        <b>\n\nLimitations and exclusions of liability\n\n</b>
+SP Designs and its Owners accepts no liability for damage resulting from any copyright infringement, virus infection, server shut down or any other cause beyond SP Design’s control. SP Designs cannot guarantee that use of the app will be free from virus or the full time availability of the app. Although the SP Designs aims to make the app available without interruption, it reserves the right to suspend or withdraw service of or access to it with or without notice, either in whole or in part for scheduled maintenance or any other reason. In case of copyright infringement you agree that your sole and exclusive remedy is limited to removal of such material from this App.
+Under no circumstances, including, but not limited to, negligence shall the SP Designs be liable for any direct, indirect, special, punitive, incidental, or consequential damages arising out of the use of, or the inability to use, the App or the Material or both.
+Without limiting the generality of the above paragraph, SP Designs is not liable for any virus or other damage that may infect your device on account of downloading.
+        <b>\n\nCopyright Infringement Claims\n\n</b>
+If you believe that any material contained in this app infringes your copyright/trademark, you can notify us via written communication to the attention of “Stylianos Michail Papamichail” at support@spdesignsofficial.com.
+</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+
+    <!-- Example settings for Data & Sync -->
+
+    <!-- Example settings for Notifications -->
+
+    <!-- Contributor names -->
+    <string name="Savion_Francisco">Savion Francisco</string>
+    <string name="Andrew_Gravelle">Andrew Gravelle</string>
+    <string name="Hamza_Kariohi">Hamza Kariohi</string>
+    <string name="Javier_Hernandez">Javier Hernandez</string>
+    <string name="Cijykik_Naloxone">Cijykik Naloxone</string>
+    <string name="Jared_Shaffer">Jared Shaffer</string>
+    <string name="Joren_Van_Der_Heyden">Joren Van der Heyden</string>
+    <string name="Bruno_Silva">Bruno Silva</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="card_image">card art</string>
+    <string name="logo">logo</string>
+    <string name="dokkan_logo_image">Dokkan Battle Logo</string>
+</resources>
