@@ -5,7 +5,9 @@
         <change>Corrected a bug where the wrong app version was displayed in the about page</change>
         <change>Fixed a bug where the Copyright Disclaimer wasn't correctly displayed</change>
         <change>Minor UI Adjustments</change>
+        <change>Updated the Cards Database with (10) more cards</change>
     </release>
+
     <release version="0.7.1" versioncode="6">
         <change>Fixed UI issues</change>
         <change>Changed the dokkan logo in the toolbar with the app's logo</change>

@@ -33,4 +33,5 @@
     <color name="tutorial_end">#00838F</color>
 
     <color name="white">#FFFFFF</color>
+    <color name="passiveSkillNameBackground">#7a000000</color>
 </resources>

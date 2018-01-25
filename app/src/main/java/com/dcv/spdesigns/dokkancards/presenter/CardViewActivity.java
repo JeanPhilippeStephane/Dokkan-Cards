@@ -9,9 +9,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.Display;
+import android.view.View;
 import android.view.WindowManager;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.ToggleButton;
 
 import com.dcv.spdesigns.dokkancards.BuildConfig;
 import com.dcv.spdesigns.dokkancards.R;
@@ -36,91 +39,115 @@ public class CardViewActivity extends AppCompatActivity {
     private TextView attText;
     private TextView defText;
     private TextView costText;
-
+    private Button arrowButton;
     private int selectedItemPosition;
+    private boolean isBtnClicked = false;
+
+    // Listener member field for each layout's button. This listener will be used recursively
+    private View.OnClickListener arrowButtonListener = new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            // When the arrowButton is clicked, choose the right layout based on the button's state
+            int resID = isBtnClicked ? R.layout.cardview_refined : R.layout.cardview_expand_details;
+
+            setContentView(resID);
+
+            // If we're in the first layout, initialize the cardArtImageView field
+            if(isBtnClicked) {
+                cardArtImageView = findViewById(R.id.cardArtImageView);
+            }
+
+            viewDefinitions(!isBtnClicked);
+            initCardViewData(selectedItemPosition);
+            setSelectedViewsInit();
+
+            // Set the arrowButton's listener to this listener (recursively)
+            arrowButton.setOnClickListener(arrowButtonListener);
+
+            // toggle our flag field
+            isBtnClicked = !isBtnClicked;
+        }
+    };
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        // Log.d("INCHES", "Size: " + screenInches + "\"");
-
         setContentView(R.layout.cardview_refined);
 
         // Retrieving the data sent over from MainActivity
         Intent intent = getIntent();
         Bundle bundle = intent.getExtras();
 
-        if(bundle != null) {
+        if (bundle != null) {
             selectedItemPosition = bundle.getInt("Card Index");
         }
         //Toast.makeText(this, "WIDTH: " + SCREEN_WIDTH, Toast.LENGTH_SHORT).show();
 
         // Initializing our views
         cardArtImageView = findViewById(R.id.cardArtImageView);
+        viewDefinitions(false);
+        setSelectedViewsInit();
+
+        initCardViewData(selectedItemPosition);
+
+        arrowButton.setOnClickListener(arrowButtonListener);
+    }
+
+    /**
+     * Sets the required textViews as selected to allow automatic scrolling
+     */
+    private void setSelectedViewsInit() {
+        leaderSkillDescText.setSelected(true);
+        superAttackTitleText.setSelected(true);
+        superAttackDescText.setSelected(true);
+        if (passiveSkillTitleText != null && passiveSkillDescText != null) {
+            passiveSkillTitleText.setSelected(true);
+            passiveSkillDescText.setSelected(true);
+        }
+    }
+
+    /**
+     * Adds the views's definitions
+     *
+     * @param initPassiveInfo used to decide whether or not the passiveSkillDesc & ..Title != null
+     *                        so that they can be defined
+     */
+    private void viewDefinitions(boolean initPassiveInfo) {
         leaderSkillDescText = findViewById(R.id.leaderSkillDesc);
         superAttackTitleText = findViewById(R.id.superAttackTitle);
         superAttackDescText = findViewById(R.id.superAttackDesc);
+        if (initPassiveInfo) {
+            passiveSkillTitleText = findViewById(R.id.passiveSkillTitle);
+            passiveSkillDescText = findViewById(R.id.passiveSkillDesc);
+        } else {
+            Log.d("Definitions", "Passive info == null");
+        }
         hpText = findViewById(R.id.HP);
         attText = findViewById(R.id.ATT);
         defText = findViewById(R.id.DEF);
         costText = findViewById(R.id.COST);
-//        passiveSkillTitleText = findViewById(R.id.passiveSkillTitle);
-//        passiveSkillDescText = findViewById(R.id.passiveSkillDesc);
-
-        leaderSkillDescText.setSelected(true);
-        superAttackTitleText.setSelected(true);
-        superAttackDescText.setSelected(true);
-
-        // Initialize the cardView.xml layout with the right data
-        initCardViewData(selectedItemPosition);
+        arrowButton = findViewById(R.id.arrowButton);
     }
 
     /**
      * Initialize the cardViewActivity's views with the data from the CardInfoDatabase.java class
+     *
      * @param selectedItemPosition Used to initialize this activity's views if the intent was called from the MainScreen Fragment
      */
     private void initCardViewData(int selectedItemPosition) {
-
+        if (cardArtImageView != null) {
             cardArtImageView.setImageResource(CardInfoDatabase.cardArts[selectedItemPosition]);
-            leaderSkillDescText.setText(CardInfoDatabase.leaderSkills[selectedItemPosition]);
-            superAttackTitleText.setText(CardInfoDatabase.superAttacksName[selectedItemPosition]);
-            superAttackDescText.setText(CardInfoDatabase.superAttacksDesc[selectedItemPosition]);
-            hpText.setText(CardInfoDatabase.hp[selectedItemPosition].toString());
-            attText.setText(CardInfoDatabase.att[selectedItemPosition].toString());
-            defText.setText(CardInfoDatabase.def[selectedItemPosition].toString());
-            costText.setText(CardInfoDatabase.cost[selectedItemPosition].toString());
-//            passiveSkillTitleText.setText(CardInfoDatabase.passiveSkillsName[selectedItemPosition]);
-//            passiveSkillDescText.setText(CardInfoDatabase.passiveSkillsDesc[selectedItemPosition]);
-    }
-
-    /**
-     * Calculates the current device's size in inches(with/without decorations)
-     * @param activity Current activity
-     * @return Returns the screen's size in "inches"
-     */
-    private static double getScreenSizeInches(Activity activity){
-        WindowManager windowManager = activity.getWindowManager();
-        Display display = windowManager.getDefaultDisplay();
-        DisplayMetrics displayMetrics = new DisplayMetrics();
-        display.getMetrics(displayMetrics);
-
-        // since SDK_INT = 1;
-        int mWidthPixels = displayMetrics.widthPixels;
-        int mHeightPixels = displayMetrics.heightPixels;
-
-        // includes window decorations (statusbar bar/menu bar)
-        try {
-            Point realSize = new Point();
-            Display.class.getMethod("getRealSize", Point.class).invoke(display, realSize);
-            mWidthPixels = realSize.x;
-            mHeightPixels = realSize.y;
-        } catch (Exception ignored) {}
-
-        DisplayMetrics dm = new DisplayMetrics();
-        activity.getWindowManager().getDefaultDisplay().getMetrics(dm);
-        double x = Math.pow(mWidthPixels / dm.xdpi, 2);
-        double y = Math.pow(mHeightPixels / dm.ydpi, 2);
-        return Math.sqrt(x + y);
+        }
+        leaderSkillDescText.setText(CardInfoDatabase.leaderSkills[selectedItemPosition]);
+        superAttackTitleText.setText(CardInfoDatabase.superAttacksName[selectedItemPosition]);
+        superAttackDescText.setText(CardInfoDatabase.superAttacksDesc[selectedItemPosition]);
+        if (passiveSkillTitleText != null && passiveSkillDescText != null) {
+            passiveSkillTitleText.setText(CardInfoDatabase.passiveSkillsName[selectedItemPosition]);
+            passiveSkillDescText.setText(CardInfoDatabase.passiveSkillsDesc[selectedItemPosition]);
+        }
+        hpText.setText(CardInfoDatabase.hp[selectedItemPosition].toString());
+        attText.setText(CardInfoDatabase.att[selectedItemPosition].toString());
+        defText.setText(CardInfoDatabase.def[selectedItemPosition].toString());
+        costText.setText(CardInfoDatabase.cost[selectedItemPosition].toString());
     }
 }
