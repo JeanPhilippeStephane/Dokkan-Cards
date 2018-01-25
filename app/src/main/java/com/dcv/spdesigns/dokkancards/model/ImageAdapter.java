@@ -57,6 +57,7 @@ public class ImageAdapter extends BaseAdapter {
 
     // References to our images
     public static final Integer[] mThumbIds = {
+            R.mipmap.second_super_saiyan_super_saiyan_trunks_teen_icon,
             R.mipmap.beyondthe_ferocious_flash_majin_vegeta_icon,
             R.mipmap.full_tilt_kamehameha_super_saiyan2_gohan_youth_icon,
             R.mipmap.merciless_condemnation_goku_black_super_saiyan_rose_and_zamasu_icon,
@@ -98,6 +99,17 @@ public class ImageAdapter extends BaseAdapter {
             R.mipmap.distortedjusticegokublackandzamasu_icon,
             R.mipmap.darkintentionsmaskedsaiyan_icon,
             R.mipmap.grimreaperofdeathsrampagesupersaiyan3gotenks_icon,
-            R.mipmap.welcometohellperfectcell_icon
+            R.mipmap.welcometohellperfectcell_icon,
+            R.mipmap.bladeofhopeanddreamssupersaiyantrunksfuture_icon,
+            R.mipmap.fullpowersalutationaralenorimaki_icon,
+            R.mipmap.passionofthewarriorracesupersaiyangodssvegeta_icon,
+            R.mipmap.hideoussupersaiyansupersaiyanbroly_icon,
+            R.mipmap.countdowntodespairmajinbuuultimategohan_icon,
+            R.mipmap.eternalhorrorlegendarysupersaiyanbroly_icon,
+            R.mipmap.wrathoftheabsolutegodfusionzamasu_icon,
+            R.mipmap.startling_super_warrior_super_saiyan_trunks_teen_icon,
+            R.mipmap.thehopeoftheuniversegoku_icon,
+            R.mipmap.agentofdestructionsynshenron_icon,
+            R.mipmap.fireofvengeancegoldenfrieza_icon
     };
 }

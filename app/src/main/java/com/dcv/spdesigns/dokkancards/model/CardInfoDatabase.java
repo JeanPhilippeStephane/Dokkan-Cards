@@ -13,6 +13,7 @@ public class CardInfoDatabase {
 
     // Card Art References
     public static final Integer[] cardArts = {
+            R.mipmap.second_super_saiyan_super_saiyan_trunks_teen_art,
             R.mipmap.beyondthe_ferocious_flash_majin_vegeta_art,
             R.mipmap.full_tilt_kamehameha_super_saiyan2_gohan_youth_art,
             R.mipmap.merciless_condemnation_goku_black_super_saiyan_rose_and_zamasu_art,
@@ -54,12 +55,24 @@ public class CardInfoDatabase {
             R.mipmap.distortedjusticegokublackandzamasu_art,
             R.mipmap.darkintentionsmaskedsaiyan_art,
             R.mipmap.grimreaperofdeathsrampagesupersaiyan3gotenks_art,
-            R.mipmap.welcometohellperfectcell_art
+            R.mipmap.welcometohellperfectcell_art,
+            R.mipmap.bladeofhopeanddreamssupersaiyantrunksfuture_art,
+            R.mipmap.fullpowersalutationaralenorimaki_art,
+            R.mipmap.passionofthewarriorracesupersaiyangodssvegeta_art,
+            R.mipmap.hideoussupersaiyansupersaiyanbroly_art,
+            R.mipmap.countdowntodespairmajinbuuultimategohan_art,
+            R.mipmap.eternalhorrorlegendarysupersaiyanbroly_art,
+            R.mipmap.wrathoftheabsolutegodfusionzamasu_art,
+            R.mipmap.startling_super_warrior_super_saiyan_trunks_teen_art,
+            R.mipmap.thehopeoftheuniversegoku_art,
+            R.mipmap.agentofdestructionsynshenron_art,
+            R.mipmap.fireofvengeancegoldenfrieza_art
     };
 
     // Card Description And Name References
     //TODO:sp Use it for the sorting feature in a future update
     public static final String[] cardNameAndDescription = {
+            "Second Super Saiyan Super Saiyan Trunks (Teen)",
             "Beyond the Ferocious Flash Majin Vegeta",
             "Full-Tilt Kamehameha Super Saiyan 2 Gohan (Youth)",
             "Merciless Condemnation Goku Black (Super Saiyan Rosé) & Zamasu",
@@ -101,11 +114,23 @@ public class CardInfoDatabase {
             "Distorted Justice Goku Black & Zamasu",
             "Dark Intentions Masked Saiyan",
             "Grim Reaper of Death's Rampage Super Saiyan 3 Gotenks",
-            "Welcome to Hell Perfect Cell"
+            "Welcome to Hell Perfect Cell",
+            "Blade of Hope and Dreams Super Saiyan Trunks (Future)",
+            "Full-Power Salutation Arale Norimaki",
+            "Passion of the Warrior Race Super Saiyan God SS Vegeta",
+            "Hideous Super Saiyan Super Saiyan Broly",
+            "Countdown to Despair Majin Buu (Ultimate Gohan)",
+            "Eternal Horror Legendary Super Saiyan Broly",
+            "Wrath of the Absolute God Fusion Zamasu",
+            "Startling Super Warrior Super Saiyan Trunks (Teen)",
+            "The Hope of the Universe Goku",
+            "Agent of Destruction Syn Shenron",
+            "Fire of Vengeance Golden Frieza"
     };
 
     // Leader Skill References
     public static final String[] leaderSkills = {
+            "PHY Type Ki +3 and HP, ATK & DEF +90%",
             "AGL Ki+3 & HP, ATK , & DEF +90%",
             "INT Ki +3 and HP, ATK, & DEF +90%",
             "TEQ Type Ki +3 and HP, ATK & DEF +90%",
@@ -148,11 +173,23 @@ public class CardInfoDatabase {
             "TEQ Type Ki +3 and HP, ATK & DEF +70%",
             "All Types Ki +3 and HP, ATK & DEF +50%",
             "TEQ Ki +3 & HP, ATK, & DEF +70%",
-            "STR Type HP, ATK & DEF +100%"
+            "STR Type HP, ATK & DEF +100%",
+            "Super Type Ki +1, HP, ATK & DEF +70%",
+            "All Types Ki +3 and HP, ATK & DEF +30%",
+            "INT Type HP, ATK & DEF +100%",
+            "STR Ki +3 & HP, ATK, & DEF +70%",
+            "INT Type Ki +3, HP, ATK, & DEF +70%",
+            "PHY Ki +3, HP, ATK & DEF +70%",
+            "Extreme Type Ki +1 & HP, ATK, & DEF +70%",
+            "PHY Type Ki +3 and HP, ATK & DEF +70%",
+            "AGL and STR Type Ki +3 and HP, ATK & DEF +30%",
+            "PHY Type ATK and DEF +60%",
+            "TEQ Type HP, ATK and DEF +100%"
     };
 
     // Super Attack Name References
     public static final String[] superAttacksName = {
+            "Burning Attack (12-17 Ki) Shining Sword Attack (18+ Ki)",
             "Final Impact / Final Explosion",
             "Father-Son Kamehameha / Father-Son Kamehameha (Full Power)",
             "Holy Light Grenade / Concerto Slash",
@@ -193,13 +230,24 @@ public class CardInfoDatabase {
             "Super Kamehameha",
             "Holy Light Grenade",
             "Shadowy Strength",
-            "Dark Rebellion Trigger",
             "Super Ghost Kamikaze Attack (9 & 10 Ki) Charging Ultra Buu Buu Volleyball Attack (11 Ki) Super Ghost Kamikaze Attack (12 Ki)",
-            "Solar Kamehameha (at 10 or 12 Ki) Self-Destruct (at 11 Ki)"
+            "Solar Kamehameha (at 10 or 12 Ki) Self-Destruct (at 11 Ki)",
+            "Final Hope Slash",
+            "N'cha Cannon | N'cha Cannon x100 (30% chance)",
+            "Pride of Our Warrior Race",
+            "Eraser Cannon",
+            "Super Kamehameha (SA Level 1) Vice Shout (SA Level 5) Super Ghost Kamehameha Attack (30% chance at SA Level 10)",
+            "Omega Blaster",
+            "True Test of a God",
+            "Burning Attack",
+            "Super Spirit Bomb",
+            "Dark Dragon-Slaying Bullet",
+            "Earth Breaker"
     };
 
     // Super Attack Description References
     public static final String[] superAttacksDesc = {
+            "Causes colossal damage to enemy and raises DEF by 30% for 3 turns | Causes mega-colossal damage to enemy and raises DEF by 30% for 3 turns",
             "Causes mega-colossal damage with a rare chance to stun the enemy /  Causes colossal damage with a rare chance to stun all enemies",
             "Causes mega-colossal damage to enemy & reatly raises ATK for 1 turn \n Causes mega-colossal damage to enemy",
             "Causes colossal damage to enemy and raises DEF by 30% for 3 turns / Causes mega-colossal damage to enemy and raises DEF by 30% for 6 turns",
@@ -241,11 +289,23 @@ public class CardInfoDatabase {
             "Causes supreme damage to enemy and raises DEF by 30% for 3 turns",
             "Causes immense damage to enemy and lowers ATK & DEF",
             "Causes immense damage to enemy Massively raises ATK for 1 turn and causes immense damage to enemy Causes extreme damage to enemy and greatly lowers DEF",
-            "Causes immense damage to enemy and raises ATK & DEF Causes mass damage to all enemies and raises ATK & DEF"
+            "Causes immense damage to enemy and raises ATK & DEF Causes mass damage to all enemies and raises ATK & DEF",
+            "Causes immense damage to enemy and greatly lowers DEF",
+            "Causes immense damage to enemy Massively raises ATK for 1 turn Causes immense damage to enemy",
+            "Causes immense damage and raises ATK for 3 turns",
+            "Causes supreme damage to enemy",
+            "Causes immense damage to enemy | Causes immense damage to enemy and lowers ATK and DEF | Greatly raises ATK, causes immense damage to enemy and greatly lowers ATK and DEF",
+            "Causes supreme damage to enemy",
+            "Causes immense damage to enemy and greatly lowers DEF",
+            "Causes supreme damage to enemy and raises DEF by 30% for 3 turns",
+            "Causes supreme damage to enemy, ATK +20% for all allies for 1 turn",
+            "Causes supreme damage to enemy and greatly lowers DEF",
+            "Causes immense damage to enemy and greatly lowers DEF"
     };
 
     // Passive Skill Name References
     public static final String[] passiveSkillsName = {
+            "Flash of Steel",
             "For the Dearly Beloved",
             "Father's Encouragement",
             "Zero Mortals Plan",
@@ -287,11 +347,23 @@ public class CardInfoDatabase {
             "True Comrade",
             "Shadowy Strength",
             "Furious Fighting Spirit",
-            "End of the Game"
+            "End of the Game",
+            "Light of Miracles",
+            "N'cha!",
+            "Princely Pressure",
+            "Solid Terror",
+            "Winning is Everything",
+            "No Mercy",
+            "Discord of Gods & Men",
+            "Mark of a Super Saiyan",
+            "Energy From All Earthlings",
+            "Rampant Bloodlust",
+            "Moment of Counterattack"
     };
 
     // Passive Skill Description References
     public static final String[] passiveSkillsDesc = {
+            "ATK +120%; high chance to perform a critical hit",
             "ATK +150% when performing Super Attack",
             "ATK +18% for every Ki Sphere obtained, and Ki +1 whenever Ki is raised with Ki Spheres",
             "Recovers 15% HP at start of turn; ATK +30% with each attack received (up to 120%)",
@@ -333,11 +405,23 @@ public class CardInfoDatabase {
             "Recovers 10% HP at start of turn; ATK +25% with each attack received (up to 100%)",
             "ATK +50000 and DEF +20000 when facing 2 or less enemies",
             "ATK +120% when performing super attack",
-            "ATK +100% at start of turn"
+            "ATK +100% at start of turn",
+            "Change STR orbs to INT orbs; ATK +15% per INT orb obtained",
+            "ATK +120% when performing a Super Attack",
+            "ATK +100%; Extreme Type enemies ATK & DEF -20%",
+            "When performing a Super Attack, ATK +60000 but DEF -18000, and launch an additional Super ATK",
+            "For every Ki sphere obtained, ATK +12% and recover 3000 HP",
+            "ATK +7000 & launch an additional Super ATK when Ki is 8 or more",
+            "ATK +120%; ATK -10% for Super Type allies",
+            "ATK +100%; medium chance to perform a critical hit",
+            "ATK +20% per STR Ki Sphere obtained, recover HP with candy",
+            "ATK +80%; all enemies' DEF -30%",
+            "Damage received -70% & ATK +70% when HP is 50% or above"
     };
 
     // Holds each card's hp stats
     public static final Integer[] hp = {
+            22513, // LR TRUNKS (PHY)
             20650, // LR MAJIN VEGETA
             20200, // LR GOHAN
             18738, // LR GOKU BLACK
@@ -379,11 +463,23 @@ public class CardInfoDatabase {
             14488, // UR (TEQ) GOKU BLACK AND ZAMASU
             14695, // UR (TEQ) MASKED SAIYAN
             14012, // UR (TEQ) SSJ3 GOTENKS
-            14524 // UR (STR) PERFECT CELL
+            14524, // UR (STR) PERFECT CELL
+            14524, // UR (INT) SSJ TRUNKS(FUTURE)(RAGE)
+            14818,
+            14212,
+            13931,
+            15017,
+            15750,
+            13918,
+            13588,
+            15756,
+            13695,
+            13950
     };
 
     // Holds each card's att stats
     public static final Integer[] att = {
+            20530, // LR TRUNKS (PHY)
             20870, // LR MAJIN VEGETA
             21975, // LR GOHAN
             22545, // LR GOKU BLACK
@@ -425,11 +521,23 @@ public class CardInfoDatabase {
             14893, // UR (TEQ) GOKU BLACK AND ZAMASU
             14948, // UR (TEQ) MASKED SAIYAN
             14757, // UR (TEQ) SSJ3 GOTENKS
-            14226 // UR (STR) PERFECT CELL
+            14226, // UR (STR) PERFECT CELL
+            14074, // UR (INT) SSJ TRUNKS(FUTURE)(RAGE)
+            13150,
+            14351,
+            15318,
+            14181,
+            14500,
+            15094,
+            14663,
+            13205,
+            12934,
+            14380
     };
 
     // Holds each card's def stats
     public static final Integer[] def = {
+            14256, // LR TRUNKS (PHY)
             15163, // LR MAJIN VEGETA
             13806, // LR GOHAN
             14125, // LR GOKU BLACK
@@ -471,7 +579,18 @@ public class CardInfoDatabase {
             9503, // UR (TEQ) GOKU BLACK AND ZAMASU
             9143, // UR (TEQ) MASKED SAIYAN
             9906, // UR (TEQ) SSJ3 GOTENKS
-            9664 // UR (STR) PERFECT CELL
+            9664, // UR (STR) PERFECT CELL
+            9754, // UR (INT) SSJ TRUNKS (FUTURE)(RAGE)
+            10375,
+            9752,
+            9050,
+            8999,
+            7925,
+            9083,
+            9741,
+            9001,
+            11300,
+            9475
     };
 
     // Holds each card's cost value
@@ -479,6 +598,7 @@ public class CardInfoDatabase {
             77,
             77,
             77,
+            77,
             99,
             77,
             99,
@@ -517,6 +637,17 @@ public class CardInfoDatabase {
             50,
             42,
             48,
+            48,
+            48,
+            48,
+            48,
+            50,
+            48,
+            48,
+            48,
+            50,
+            42,
+            42,
             48
     };
 }
