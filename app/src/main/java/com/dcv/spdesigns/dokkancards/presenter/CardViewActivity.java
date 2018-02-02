@@ -1,24 +1,18 @@
 package com.dcv.spdesigns.dokkancards.presenter;
 
-import android.app.Activity;
 import android.content.Intent;
-import android.graphics.Point;
-import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.DisplayMetrics;
 import android.util.Log;
-import android.view.Display;
 import android.view.View;
-import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.ToggleButton;
 
-import com.dcv.spdesigns.dokkancards.BuildConfig;
 import com.dcv.spdesigns.dokkancards.R;
-import com.dcv.spdesigns.dokkancards.model.CardInfoDatabase;
+import com.dcv.spdesigns.dokkancards.model.main.CardInfoDatabase;
+import com.dcv.spdesigns.dokkancards.model.glb.GlobalDataHolder;
+import com.dcv.spdesigns.dokkancards.model.jp.JPDataHolder;
 
 /**
  * DokkanCards was
@@ -41,10 +35,11 @@ public class CardViewActivity extends AppCompatActivity {
     private TextView costText;
     private Button arrowButton;
     private int selectedItemPosition;
+    private int identifier;
     private boolean isBtnClicked = false;
 
     // Listener member field for each layout's button. This listener will be used recursively
-    private View.OnClickListener arrowButtonListener = new View.OnClickListener() {
+    private final View.OnClickListener arrowButtonListener = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
             // When the arrowButton is clicked, choose the right layout based on the button's state
@@ -58,8 +53,8 @@ public class CardViewActivity extends AppCompatActivity {
             }
 
             viewDefinitions(!isBtnClicked);
-            initCardViewData(selectedItemPosition);
             setSelectedViewsInit();
+            callInitDataMethods();
 
             // Set the arrowButton's listener to this listener (recursively)
             arrowButton.setOnClickListener(arrowButtonListener);
@@ -80,15 +75,14 @@ public class CardViewActivity extends AppCompatActivity {
 
         if (bundle != null) {
             selectedItemPosition = bundle.getInt("Card Index");
+            identifier = bundle.getInt("Identifier");
         }
-        //Toast.makeText(this, "WIDTH: " + SCREEN_WIDTH, Toast.LENGTH_SHORT).show();
 
         // Initializing our views
         cardArtImageView = findViewById(R.id.cardArtImageView);
         viewDefinitions(false);
         setSelectedViewsInit();
-
-        initCardViewData(selectedItemPosition);
+        callInitDataMethods();
 
         arrowButton.setOnClickListener(arrowButtonListener);
     }
@@ -131,23 +125,79 @@ public class CardViewActivity extends AppCompatActivity {
 
     /**
      * Initialize the cardViewActivity's views with the data from the CardInfoDatabase.java class
-     *
      * @param selectedItemPosition Used to initialize this activity's views if the intent was called from the MainScreen Fragment
      */
-    private void initCardViewData(int selectedItemPosition) {
+    private void initCardViewMainScreen(int selectedItemPosition) {
         if (cardArtImageView != null) {
             cardArtImageView.setImageResource(CardInfoDatabase.cardArts[selectedItemPosition]);
         }
         leaderSkillDescText.setText(CardInfoDatabase.leaderSkills[selectedItemPosition]);
         superAttackTitleText.setText(CardInfoDatabase.superAttacksName[selectedItemPosition]);
         superAttackDescText.setText(CardInfoDatabase.superAttacksDesc[selectedItemPosition]);
-        if (passiveSkillTitleText != null && passiveSkillDescText != null) {
-            passiveSkillTitleText.setText(CardInfoDatabase.passiveSkillsName[selectedItemPosition]);
-            passiveSkillDescText.setText(CardInfoDatabase.passiveSkillsDesc[selectedItemPosition]);
-        }
         hpText.setText(CardInfoDatabase.hp[selectedItemPosition].toString());
         attText.setText(CardInfoDatabase.att[selectedItemPosition].toString());
         defText.setText(CardInfoDatabase.def[selectedItemPosition].toString());
         costText.setText(CardInfoDatabase.cost[selectedItemPosition].toString());
+        if (passiveSkillTitleText != null && passiveSkillDescText != null) {
+            passiveSkillTitleText.setText(CardInfoDatabase.passiveSkillsName[selectedItemPosition]);
+            passiveSkillDescText.setText(CardInfoDatabase.passiveSkillsDesc[selectedItemPosition]);
+        }
+    }
+
+    /**
+     * Initialize the cardViewActivity's views with the data from the GlobalDataHolder.java class
+     * @param selectedItemPosition Used to initialize this activity's views if the intent was called from the Global Fragment
+     */
+    private void initCardViewGLB(int selectedItemPosition) {
+        if(cardArtImageView != null) {
+            cardArtImageView.setImageResource(GlobalDataHolder.cardArts.get(selectedItemPosition));
+        }
+        leaderSkillDescText.setText(GlobalDataHolder.leaderSkills.get(selectedItemPosition));
+        superAttackTitleText.setText(GlobalDataHolder.superAttacksName.get(selectedItemPosition));
+        superAttackDescText.setText(GlobalDataHolder.superAttacksDesc.get(selectedItemPosition));
+        hpText.setText(GlobalDataHolder.hp.get(selectedItemPosition).toString());
+        attText.setText(GlobalDataHolder.att.get(selectedItemPosition).toString());
+        defText.setText(GlobalDataHolder.def.get(selectedItemPosition).toString());
+        costText.setText(GlobalDataHolder.cost.get(selectedItemPosition).toString());
+        if(passiveSkillTitleText != null && passiveSkillDescText != null) {
+            passiveSkillTitleText.setText(GlobalDataHolder.passiveSkillsName.get(selectedItemPosition));
+            passiveSkillDescText.setText(GlobalDataHolder.passiveSkillsDesc.get(selectedItemPosition));
+        }
+    }
+
+    /**
+     * Initialize the cardViewActivity's views with the data from the JPDataHolder.java class
+     * @param selectedItemPosition Used to initialize this activity's views if the intent was called from the JP Fragment
+     */
+    private void initCardViewJP(int selectedItemPosition) {
+        if(cardArtImageView != null) {
+            cardArtImageView.setImageResource(JPDataHolder.cardArts.get(selectedItemPosition));
+        }
+        leaderSkillDescText.setText(JPDataHolder.leaderSkills.get(selectedItemPosition));
+        superAttackTitleText.setText(JPDataHolder.superAttacksName.get(selectedItemPosition));
+        superAttackDescText.setText(JPDataHolder.superAttacksDesc.get(selectedItemPosition));
+        hpText.setText(JPDataHolder.hp.get(selectedItemPosition).toString());
+        attText.setText(JPDataHolder.att.get(selectedItemPosition).toString());
+        defText.setText(JPDataHolder.def.get(selectedItemPosition).toString());
+        costText.setText(JPDataHolder.cost.get(selectedItemPosition).toString());
+        if(passiveSkillTitleText != null && passiveSkillDescText != null) {
+            passiveSkillTitleText.setText(JPDataHolder.passiveSkillsName.get(selectedItemPosition));
+            passiveSkillDescText.setText(JPDataHolder.passiveSkillsDesc.get(selectedItemPosition));
+        }
+    }
+
+    /**
+     * Calls the appropriate initCardView() method based on the identifier field's value
+     */
+    private void callInitDataMethods() {
+        if(identifier == 0) {
+            initCardViewMainScreen(selectedItemPosition);
+        } else if(identifier == 1) {
+            initCardViewGLB(selectedItemPosition);
+        } else if(identifier == 2) {
+            initCardViewJP(selectedItemPosition);
+        } else {
+            Log.d("DEBUG", "Error initializing card view data");
+        }
     }
 }

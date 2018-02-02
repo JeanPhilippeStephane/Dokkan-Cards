@@ -1,26 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+
+<RelativeLayout android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
-    android:background="@drawable/card_view_bg"
-    tools:layout_editor_absoluteY="25dp">
-
-    <!-- Implement scrolling text
-            android:focusable="true"
-            android:focusableInTouchMode="true"
-            android:singleLine="true"
-            android:scrollHorizontally="true"
-            android:ellipsize="marquee"
-            android:marqueeRepeatLimit="marquee_forever"
-     -->
-
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:background="@drawable/card_details_open">
+    style="@style/CardView"
+    android:background="@drawable/card_details_open"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
         <TextView
             android:id="@+id/COST"
@@ -109,7 +96,8 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.496"
-            app:layout_constraintVertical_bias="0.626" />
+            app:layout_constraintVertical_bias="0.626"
+            tools:ignore="SelectableText" />
 
         <TextView
             android:id="@+id/superAttackTitle"
@@ -131,7 +119,8 @@
             android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@+id/superAttackDesc"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="SelectableText" />
 
         <TextView
             android:id="@+id/superAttackDesc"
@@ -153,7 +142,8 @@
             android:textStyle="italic"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="SelectableText" />
 
 
         <TextView
@@ -171,7 +161,7 @@
             android:focusableInTouchMode="true"
             android:fontFamily="monospace"
             android:marqueeRepeatLimit="marquee_forever"
-            android:paddingLeft="7dp"
+            android:paddingStart="7dp"
             android:scrollHorizontally="true"
             android:singleLine="true"
             android:textAlignment="viewStart"
@@ -217,5 +207,3 @@
             android:textOn="" />
 
     </RelativeLayout>
-
-</RelativeLayout>

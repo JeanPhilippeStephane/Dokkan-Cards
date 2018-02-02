@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
     private ActionBarDrawerToggle mToggle; // Button for toggling the side menu
 
     // Keeps the position of the previously selected menu item(0 : Home)
-    private int position = 0;
+    private final int position = 0;
 
     @SuppressLint("ResourceAsColor")
     @Override
@@ -70,6 +70,7 @@ public class MainActivity extends AppCompatActivity {
         final Toolbar mToolbar = findViewById(R.id.navActionBar);
         setSupportActionBar(mToolbar); // check quick doq
         try {
+            //noinspection ConstantConditions
             getSupportActionBar().setDisplayShowTitleEnabled(false);
         } catch (NullPointerException npe) {
             npe.printStackTrace();
@@ -339,12 +340,15 @@ public class MainActivity extends AppCompatActivity {
     private void changeActionBarColor(int menuItemPos) {
         switch (menuItemPos) {
             case 1:
+                //noinspection ConstantConditions
                 getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.colorPrimaryDark)));
                 break;
             case 2:
+                //noinspection ConstantConditions
                 getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.colorPrimaryGLB)));
                 break;
             case 3:
+                //noinspection ConstantConditions
                 getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.colorPrimaryJP)));
                 break;
         }

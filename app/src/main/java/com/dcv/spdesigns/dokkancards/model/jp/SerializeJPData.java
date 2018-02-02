@@ -153,7 +153,7 @@ public class SerializeJPData {
     public static ArrayList<String> ReadPassiveSkillsDesc(Context context) {
         SharedPreferences appPrefs = PreferenceManager.getDefaultSharedPreferences(context);
         Gson gson = new Gson();
-        String passiveSkillsDescJson = appPrefs.getString("PassiveSkillNamesJP","");
+        String passiveSkillsDescJson = appPrefs.getString("PassiveSkillDescJP","");
         Type type = new TypeToken<ArrayList<String>>(){}.getType();
         return gson.fromJson(passiveSkillsDescJson,type);
     }
