@@ -17,7 +17,7 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.GridView;
 
-import com.dcv.spdesigns.dokkancards.presenter.CardViewJPGLBActivity;
+import com.dcv.spdesigns.dokkancards.presenter.CardViewActivity;
 import com.dcv.spdesigns.dokkancards.R;
 import com.dcv.spdesigns.dokkancards.model.jp.JPDataHolder;
 import com.dcv.spdesigns.dokkancards.model.jp.UserBoxJpImageAdapter;
@@ -45,8 +45,12 @@ public class UserBoxJPFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         // Get the data to be used to initialize the UserBoxJPFragment's grid
-        ArrayList<Integer> data = getArguments().getIntegerArrayList("DATA_LIST_JP");
-        adapter = new UserBoxJpImageAdapter(this.getContext(), data);
+        try {
+            ArrayList<Integer> data = getArguments().getIntegerArrayList("DATA_LIST_JP");
+            adapter = new UserBoxJpImageAdapter(this.getContext(), data);
+        } catch (NullPointerException npe) {
+            npe.printStackTrace();
+        }
 
         jpGridView = view.findViewById(R.id.userBoxJPGridView);
         jpGridView.setAdapter(adapter);
@@ -56,9 +60,9 @@ public class UserBoxJPFragment extends Fragment {
         jpGridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent cardViewIntent = new Intent(getContext(), CardViewJPGLBActivity.class);
-                cardViewIntent.putExtra("INDEX",position);
-                cardViewIntent.putExtra("CALLED_FROM", false); // if false = from JP
+                Intent cardViewIntent = new Intent(getContext(), CardViewActivity.class);
+                cardViewIntent.putExtra("Card Index",position);
+                cardViewIntent.putExtra("Identifier", 2);
                 startActivity(cardViewIntent);
             }
         });

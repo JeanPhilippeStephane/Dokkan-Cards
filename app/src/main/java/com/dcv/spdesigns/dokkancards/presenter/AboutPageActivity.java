@@ -1,6 +1,7 @@
 package com.dcv.spdesigns.dokkancards.presenter;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -25,6 +26,32 @@ public class AboutPageActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        Element Facebook = new Element();
+        Facebook.setTitle("Find me on Facebook");
+        Facebook.setIconDrawable(R.drawable.facebook_icon_96dp);
+        Facebook.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String fbUrl = "https://www.facebook.com/SteliosPapamichailspd";
+                Intent fbIntent = new Intent(Intent.ACTION_VIEW);
+                fbIntent.setData(Uri.parse(fbUrl));
+                startActivity(fbIntent);
+            }
+        });
+
+        Element Twitter = new Element();
+        Twitter.setTitle("Find me on Twitter");
+        Twitter.setIconDrawable(R.drawable.twitter_icon_96dp);
+        Twitter.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String twitterUrl = "https://twitter.com/MikePapamichail";
+                Intent twitterIntent = new Intent(Intent.ACTION_VIEW);
+                twitterIntent.setData(Uri.parse(twitterUrl));
+                startActivity(twitterIntent);
+            }
+        });
 
         Element Contributors = new Element();
         Contributors.setTitle("Contributors");
@@ -62,7 +89,8 @@ public class AboutPageActivity extends AppCompatActivity {
                 .setImage(R.mipmap.ic_launcher)
                 .addItem(version)
                 .addGroup("Connect with me")
-                .addFacebook("https://www.facebook.com/SteliosPapamichailspd","Find me on Facebook") //TODO:sp Fix the link not opening
+                .addItem(Facebook)
+                .addItem(Twitter)
                 .addEmail("support@spdesignsofficial.com","Support Email")
                 .addWebsite("https://spdesignsofficial.wixsite.com/spds","Visit the website")
                 .addItem(Contributors)

@@ -17,9 +17,9 @@ import android.widget.GridView;
 
 import com.dcv.spdesigns.dokkancards.presenter.CardViewActivity;
 import com.dcv.spdesigns.dokkancards.R;
-import com.dcv.spdesigns.dokkancards.model.CardInfoDatabase;
+import com.dcv.spdesigns.dokkancards.model.main.CardInfoDatabase;
 import com.dcv.spdesigns.dokkancards.model.glb.GlobalDataHolder;
-import com.dcv.spdesigns.dokkancards.model.ImageAdapter;
+import com.dcv.spdesigns.dokkancards.model.main.ImageAdapter;
 import com.dcv.spdesigns.dokkancards.model.jp.JPDataHolder;
 
 public class MainScreenFragment extends Fragment {
@@ -49,8 +49,7 @@ public class MainScreenFragment extends Fragment {
                 // Create a new Intent...
                 Intent intent = new Intent(getContext(),CardViewActivity.class);
                 intent.putExtra("Card Index",position);
-                intent.putExtra("GLB_CARD_INDEX", -1);
-                intent.putExtra("SCREEN_WIDTH",1080);
+                intent.putExtra("Identifier", 0);
                 startActivity(intent);
             }
         });

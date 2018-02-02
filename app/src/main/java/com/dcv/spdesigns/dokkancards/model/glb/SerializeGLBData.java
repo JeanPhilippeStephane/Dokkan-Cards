@@ -152,7 +152,7 @@ public class SerializeGLBData {
     public static ArrayList<String> ReadPassiveSkillsDesc(Context context) {
         SharedPreferences appPrefs = PreferenceManager.getDefaultSharedPreferences(context);
         Gson gson = new Gson();
-        String passiveSkillsDescJson = appPrefs.getString("PassiveSkillNames","");
+        String passiveSkillsDescJson = appPrefs.getString("PassiveSkillDesc","");
         Type type = new TypeToken<ArrayList<String>>(){}.getType();
         return gson.fromJson(passiveSkillsDescJson,type);
     }

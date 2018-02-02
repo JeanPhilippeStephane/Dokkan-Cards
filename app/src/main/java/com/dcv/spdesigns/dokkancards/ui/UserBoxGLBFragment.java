@@ -17,7 +17,7 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.GridView;
 
-import com.dcv.spdesigns.dokkancards.presenter.CardViewJPGLBActivity;
+import com.dcv.spdesigns.dokkancards.presenter.CardViewActivity;
 import com.dcv.spdesigns.dokkancards.R;
 import com.dcv.spdesigns.dokkancards.model.glb.GlobalDataHolder;
 import com.dcv.spdesigns.dokkancards.model.glb.UserBoxGlbImageAdapter;
@@ -45,8 +45,12 @@ public class UserBoxGLBFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         // Get the data to be used to initialize the UserBoxGLBFragment's grid
-        ArrayList<Integer> data = getArguments().getIntegerArrayList("DATA_LIST");
-        adapter = new UserBoxGlbImageAdapter(this.getContext(), data);
+        try {
+            ArrayList<Integer> data = getArguments().getIntegerArrayList("DATA_LIST");
+            adapter = new UserBoxGlbImageAdapter(this.getContext(), data);
+        } catch (NullPointerException npe) {
+            npe.printStackTrace();
+        }
 
         globalGridView = view.findViewById(R.id.userBoxGlbGridView);
         globalGridView.setAdapter(adapter);
@@ -56,9 +60,9 @@ public class UserBoxGLBFragment extends Fragment {
         globalGridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent cardViewIntent = new Intent(getContext(), CardViewJPGLBActivity.class);
-                cardViewIntent.putExtra("INDEX",position);
-                cardViewIntent.putExtra("CALLED_FROM", true); // if true = from GLB
+                Intent cardViewIntent = new Intent(getContext(), CardViewActivity.class);
+                cardViewIntent.putExtra("Card Index",position);
+                cardViewIntent.putExtra("Identifier", 1);
                 startActivity(cardViewIntent);
             }
         });
