@@ -25,4 +25,4 @@ This project is a side-tool -mobile- application for the actual mobile game "Dra
 
 4. And a bunch more that you can see in the image below:
 
-[Side-Menu Image]( DokkanCards-Alpha-/sidemenu.png )
+[Side-Menu Image](DokkanCards-Alpha-/sidemenu.png)
