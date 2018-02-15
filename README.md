@@ -23,6 +23,11 @@ This project is a side-tool -mobile- application for the actual mobile game "Dra
    
 3. An *Events* page where every user will be able to see various event details like medals,character drops etc.
 
-4. And a bunch more that you can see in the image below:
+4. And a bunch more options like:
 
-[Side-Menu Image](DokkanCards-Alpha-/sidemenu.png)
+  - *Feedback*
+  - *Contact Us*
+  - *Website*
+  - *Get Dokkan Battle*
+  - *About*
+  - An in-app tutorial section that will help every user get started by teaching them the basics of the app
