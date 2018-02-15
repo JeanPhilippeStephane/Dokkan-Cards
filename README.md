@@ -14,9 +14,15 @@ This project is a side-tool -mobile- application for the actual mobile game "Dra
    - Tap on a card's icon to view it's details
    - Long-tap on a card's icon to add it to either their *User Box (GLB)* or *User Box (JP)*
    
-2. A *User Box(GLB)* page, within which each player will be able to :
+2. A *User Box(GLB)* and a *User Box(JP)* page, within which each user will be able to :
 
-   - See all the cards that they own on their Global Account(**You must add them first manually from the main page**)
+   - See all the cards that they own on their Global & JP Accounts respectively(**You must add them first manually from the main page**)
    - Remove cards
    - Sort their card box
    - Search for any card in their box
+   
+3. An *Events* page where every user will be able to see various event details like medals,character drops etc.
+
+4. And a bunch more that you can see in the image below:
+
+
