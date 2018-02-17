@@ -7,6 +7,11 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@drawable/card_view_bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:background="@drawable/card_details_open">
 
         <TextView
@@ -195,7 +200,7 @@
             tools:layout_editor_absoluteY="602dp" />
 
         <Button
-            android:id="@+id/arrowButton"
+            android:id="@+id/arrowButton2"
             android:layout_width="60dp"
             android:layout_height="35dp"
             android:layout_alignParentBottom="true"
@@ -205,5 +210,7 @@
             android:background="@drawable/arrow_down"
             android:textOff=""
             android:textOn="" />
+
+    </RelativeLayout>
 
     </RelativeLayout>

@@ -18,7 +18,7 @@ public class UserBoxGlbImageAdapter extends BaseAdapter {
 
     private final Context mContext;
 
-    private ArrayList<Integer> mGLBIcons = new ArrayList<>();
+    public static ArrayList<Integer> mGLBIcons = new ArrayList<>();
 
     public UserBoxGlbImageAdapter(Context c , ArrayList<Integer> data) {
         mContext = c;
