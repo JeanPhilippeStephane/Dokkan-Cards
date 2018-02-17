@@ -27,7 +27,7 @@ import java.util.ArrayList;
 public class UserBoxGLBFragment extends Fragment {
 
     private GridView globalGridView;
-    private UserBoxGlbImageAdapter adapter;
+    private static UserBoxGlbImageAdapter adapter;
 
     public UserBoxGLBFragment() {
         // Required empty public constructor
@@ -122,5 +122,9 @@ public class UserBoxGLBFragment extends Fragment {
         GlobalDataHolder.def.remove(position);
         GlobalDataHolder.cost.remove(position);
         UserBoxGlbImageAdapter.refreshFragmentView(adapter);
+    }
+
+    public static UserBoxGlbImageAdapter getUserBoxAdapter() {
+        return adapter;
     }
 }

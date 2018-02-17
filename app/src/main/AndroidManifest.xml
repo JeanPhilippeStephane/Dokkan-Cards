@@ -5,12 +5,12 @@
     <application
         android:name=".presenter.DokkanCardsApplication"
         android:allowBackup="true"
+        android:fullBackupContent="@xml/backup_descriptor"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme"
-        android:fullBackupContent="@xml/backup_descriptor">
+        android:theme="@style/AppTheme">
         <activity android:name=".presenter.MainActivity" />
         <activity
             android:name=".presenter.CardViewActivity"
@@ -39,6 +39,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".presenter.ThirdPartyLibsActivity" />
+        <activity android:name=".presenter.CardFullDetailsActivity"></activity>
     </application>
 
 </manifest>
