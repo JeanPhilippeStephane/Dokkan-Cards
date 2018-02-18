@@ -38,3 +38,7 @@ Being a Dragon Ball fan myself for many many years, i started playing "Dokkan Ba
   - *Get Dokkan Battle*
   - *About*
   - An in-app tutorial section that will help every user get started by teaching them the basics of the app
+  
+  *IMPORTANT NOTICE*
+  
+  ## You are not allowed to post this project and claim that it is yours and you cannot use my code for your projects without permission!  
