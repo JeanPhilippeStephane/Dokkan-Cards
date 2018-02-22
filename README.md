@@ -41,4 +41,6 @@ Being a Dragon Ball fan myself for many many years, i started playing "Dokkan Ba
   
   *IMPORTANT NOTICE*
   
-  ## You are not allowed to post this project and claim that it is yours and you cannot use my code for your projects without permission!  
+  ## You are not allowed to post this project and claim that it is yours and you cannot use my code and assets for your projects (personal or commercial) without permission! 
+
+Also, read the disclaimer located under: *Dokkan-Cards/app/src/main/res/values/strings.xml*
