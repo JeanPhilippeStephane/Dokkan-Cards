@@ -24,14 +24,6 @@ Without limiting the generality of the above paragraph, SP Designs is not liable
 If you believe that any material contained in this app infringes your copyright/trademark, you can notify us via written communication to the attention of “Stylianos Michail Papamichail” at support@spdesignsofficial.com.
 </string>
 
-    <!-- Strings related to Settings -->
-
-    <!-- Example General settings -->
-
-    <!-- Example settings for Data & Sync -->
-
-    <!-- Example settings for Notifications -->
-
     <!-- Contributor names -->
     <string name="Savion_Francisco">Savion Francisco</string>
     <string name="Andrew_Gravelle">Andrew Gravelle</string>
@@ -41,8 +33,12 @@ If you believe that any material contained in this app infringes your copyright/
     <string name="Jared_Shaffer">Jared Shaffer</string>
     <string name="Joren_Van_Der_Heyden">Joren Van der Heyden</string>
     <string name="Bruno_Silva">Bruno Silva</string>
+    <string name="ZainWD">ZainWD</string>
+    <string name="YouHavingAGiggle">YouHavingAGiggle</string>
+    <string name="Blake_Holt">Blake Holt (Hotel)</string>
+    <string name="Kyle_Green">Kyle Green</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
+    <!-- Image Content descriptions -->
     <string name="card_image">card art</string>
     <string name="logo">logo</string>
     <string name="dokkan_logo_image">Dokkan Battle Logo</string>
