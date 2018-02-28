@@ -71,6 +71,26 @@ public class CardInfoDatabase {
 
     private static Card c30 = new Card(R.mipmap.outshiningdarknesssupergogeta_art,R.mipmap.outshiningdarknesssupergogeta_icon,"Outshining Darkness Super Gogeta", "Super INT Type Ki +3 and HP, ATK & DEF +120%; Extreme INT Type Ki +1 and HP, ATK & DEF +50%","Soul Punisher","Causes immense damage to enemy and lowers ATK & DEF","Overwhelming Radiance","ATK +120%; attacks effective against all Types",15695,16660,9578,58);
 
+    private static Card c31 = new Card(R.mipmap.naught_but_rampage_super_saiyan_3_gotenks_art,R.mipmap.naught_but_rampage_super_saiyan_3_gotenks_icon, "Naught but Rampage Super Saiyan 3 Gotenks","Super PHY Type Ki +3 and HP, ATK & DEF +120%; Extreme PHY Type Ki +1 and HP, ATK & DEF +50%","Life-Risking Blow","Causes immense damage to enemy and raises ATK for 1 turn (12+ KI) | Massively raises ATK for 1 turn and causes immense damage to enemy (11+ KI)| Causes immense damage to enemy and greatly lowers DEF (9+ KI)","Ultra Super Saiyan","ATK +120%; plus an additional ATK +60% and DEF -30% for 7 turns from start of turn",15900,15900,9850,58);
+
+    private static Card c32 = new Card(R.mipmap.astoundingtransformationsupersaiyan3gokuangel_art,R.mipmap.astoundingtransformationsupersaiyan3gokuangel_icon,"Astounding Transformation Super Saiyan 3 Goku (Angel)","Super TEQ Type Ki +3 and HP, ATK & DEF +120%; Extreme TEQ Type Ki +1 and HP, ATK & DEF +50%","Super Dragon Twin Fists", "Causes immense damage with a rare chance to stun the enemy", "Earth-Shaking Strength",  "ATK +120% and ATK +20% per Rainbow Ki Sphere obtained",15225,16750,9625,58);
+
+    private static Card c33 = new Card( R.mipmap.azureomnipotencesupersaiyangodssvegito_art, R.mipmap.azureomnipotencesupersaiyangodssvegito_icon, "Azure Omnipotence Super Saiyan God SS Vegito", "Super Type Ki +3 and HP, ATK, & DEF +50%","Final Kamehameha","Causes immense damage to enemy","Unfathomable Speed",  "Great chance to launch up to 2 additional attacks, each of which has a chance to become a Super Attack; damage received from normal ATKs -30%, counter with tremendous power",15700,16500,9151,48);
+
+    private static Card c34 = new Card(R.mipmap.rosestainedsupersaiyanbokublacksupersaiyanrose_art,R.mipmap.rosestainedsupersaiyanbokublacksupersaiyanrose_icon,"Rose Stained Super Saiyan Goku Black (Super Saiyan Rosé)", "Extreme Type Ki +3 and HP, ATK & DEF +50%", "Violent Fierce God Slicer", "Causes immense damage to enemy and greatly lowers DEF","Mastery of Strength","At start of turn, Ki +3 for Extreme Type and ATK +100%",16020,15100,10155,48);
+
+    private static Card c35 = new Card(R.mipmap.unparalleledgoldenkisupervegito_art,R.mipmap.unparalleledgoldenkisupervegito_icon,"Unparalleled Golden Ki Super Vegito","AGL Type Ki +3, HP, ATK, & DEF +70%","Spirit Sword","Causes immense damage, allies' ATK +30% for 1 turn","Flawless Combat","Damage received from normal ATKs -80%, counter with tremendous power",15750,15840,9625,48);
+
+    private static Card c36 = new Card( R.mipmap.hopelessminusenergyomegashenron_art, R.mipmap.hopelessminusenergyomegashenron_icon,"Hopeless Minus Energy Omega Shenron","STR Type Ki +3, HP, ATK and DEF +70%","Minus Energy Power Ball","Causes immense damage to enemy and greatly lowers DEF","Evil Domination","ATK +80%; all enemies' ATK -30%",14520,14203, 11611,48);
+
+    private static Card c37 = new Card(R.mipmap.darkmenacegokublack_art, R.mipmap.darkmenacegokublack_icon,"Dark Menace Goku Black","Extreme PHY Type HP, ATK & DEF +100%","Black Kamehameha (SA Lv.1-9) Black Power Ball (SA Lv.10)",  "Causes immense damage to enemy Causes immense damage to enemy and lowers ATK & DEF", "The Rush of Battle",  "Extreme Type Ki +3; ATK +3000 for every Ki Sphere obtained",15950,14800,9125,48);
+
+    private static Card c38 = new Card(R.mipmap.thefinalclashmajinvegeta_art,R.mipmap.thefinalclashmajinvegeta_icon,"The Final Clash Majin Vegeta","AGL Ki +3 & HP, ATK, & DEF +70%","Final Impact","Causes supreme damage, rare chance to stun enemy","Battle to the Death", "ATK +100% when performing Super Attack",14806,14153,10169,58);
+
+    private static Card c39 = new Card(R.mipmap.fatalresolvesupersaiyan2gohanyouth_art, R.mipmap.fatalresolvesupersaiyan2gohanyouth_icon,"Fatal Resolve Super Saiyan 2 Gohan (Youth)","INT Ki +3 and HP, ATK, & DEF +70%","Super Kamehameha","Causes supreme damage to enemy and raises ATK for 1 turn","Emotional Release", "ATK +15% for every Ki Sphere obtained",14994,14365,9609,50);
+
+    private static Card c40 = new Card(R.mipmap.distortedjusticegokublackandzamasu_art,R.mipmap.distortedjusticegokublackandzamasu_icon,"Distorted Justice Goku Black & Zamasu","TEQ Type Ki +3 and HP, ATK & DEF +70%","Holy Light Grenade","Causes supreme damage to enemy and raises DEF by 30% for 3 turns","True Comrade","Recovers 10% HP at start of turn; ATK +25% with each attack received (up to 100%)",14488,14893,9503,50);
+
     public static final Card[] cardDatabase = {
             c1,
             c2,
@@ -101,21 +121,41 @@ public class CardInfoDatabase {
             c27,
             c28,
             c29,
-            c30
+            c30,
+            c31,
+            c32,
+            c33,
+            c34,
+            c35,
+            c36,
+            c37,
+            c38,
+            c39,
+            c40
     };
+
+    // 120% Lead & Category Lead Arrays
+
+    public static Card[] Leaders120 = {};
+
+    public static Card[] CategoryLeaders = {};
+
+    // Card Arrays based on Cards
+
+    public static Card[] LRCards = {};
+
+    public static Card[] URCards = {};
+
+    public static Card[] SSRCards = {};
+
+    public static Card[] SRCards = {};
+
+    public static Card[] RCards = {};
+
+    public static Card[] NCards = {};
 
     // Card Art References
     public static final Integer[] cardArts = {
-            R.mipmap.naught_but_rampage_super_saiyan_3_gotenks_art,
-            R.mipmap.astoundingtransformationsupersaiyan3gokuangel_art,
-            R.mipmap.azureomnipotencesupersaiyangodssvegito_art,
-            R.mipmap.rosestainedsupersaiyanbokublacksupersaiyanrose_art,
-            R.mipmap.unparalleledgoldenkisupervegito_art,
-            R.mipmap.hopelessminusenergyomegashenron_art,
-            R.mipmap.darkmenacegokublack_art,
-            R.mipmap.thefinalclashmajinvegeta_art,
-            R.mipmap.fatalresolvesupersaiyan2gohanyouth_art,
-            R.mipmap.distortedjusticegokublackandzamasu_art,
             R.mipmap.darkintentionsmaskedsaiyan_art,
             R.mipmap.grimreaperofdeathsrampagesupersaiyan3gotenks_art,
             R.mipmap.welcometohellperfectcell_art,
@@ -134,16 +174,6 @@ public class CardInfoDatabase {
 
     // Card Description And Name References
     public static final String[] cardNameAndDescription = {
-            "Naught but Rampage Super Saiyan 3 Gotenks",
-            "Astounding Transformation Super Saiyan 3 Goku (Angel)",
-            "Azure Omnipotence Super Saiyan God SS Vegito",
-            "Rose Stained Super Saiyan Goku Black (Super Saiyan Rosé)",
-            "Unparalleled Golden Ki Super Vegito",
-            "Hopeless Minus Energy Omega Shenron",
-            "Dark Menace Goku Black",
-            "The Final Clash Majin Vegeta",
-            "Fatal Resolve Super Saiyan 2 Gohan (Youth)",
-            "Distorted Justice Goku Black & Zamasu",
             "Dark Intentions Masked Saiyan",
             "Grim Reaper of Death's Rampage Super Saiyan 3 Gotenks",
             "Welcome to Hell Perfect Cell",
@@ -162,16 +192,6 @@ public class CardInfoDatabase {
 
     // Leader Skill References
     public static final String[] leaderSkills = {
-            "\tSuper PHY Type Ki +3 and HP, ATK & DEF +120%; Extreme PHY Type Ki +1 and HP, ATK & DEF +50%",
-            "Super TEQ Type Ki +3 and HP, ATK & DEF +120%; Extreme TEQ Type Ki +1 and HP, ATK & DEF +50%",
-            "Super Type Ki +3 and HP, ATK, & DEF +50%",
-            "Extreme Type Ki +3 and HP, ATK & DEF +50%",
-            "AGL Type Ki +3, HP, ATK, & DEF +70%",
-            "STR Type Ki +3, HP, ATK and DEF +70%",
-            "Extreme PHY Type HP, ATK & DEF +100%",
-            "AGL Ki +3 & HP, ATK, & DEF +70%",
-            "INT Ki +3 and HP, ATK, & DEF +70%",
-            "TEQ Type Ki +3 and HP, ATK & DEF +70%",
             "All Types Ki +3 and HP, ATK & DEF +50%",
             "TEQ Ki +3 & HP, ATK, & DEF +70%",
             "STR Type HP, ATK & DEF +100%",
@@ -190,16 +210,6 @@ public class CardInfoDatabase {
 
     // Super Attack Name References
     public static final String[] superAttacksName = {
-            "Life-Risking Blow",
-            "Super Dragon Twin Fists",
-            "Final Kamehameha",
-            "Violent Fierce God Slicer",
-            "Spirit Sword",
-            "Minus Energy Power Ball",
-            "Black Kamehameha (SA Lv.1-9) Black Power Ball (SA Lv.10)",
-            "Final Impact",
-            "Super Kamehameha",
-            "Holy Light Grenade",
             "Shadowy Strength",
             "Super Ghost Kamikaze Attack (9 & 10 Ki) Charging Ultra Buu Buu Volleyball Attack (11 Ki) Super Ghost Kamikaze Attack (12 Ki)",
             "Solar Kamehameha (at 10 or 12 Ki) Self-Destruct (at 11 Ki)",
@@ -218,16 +228,6 @@ public class CardInfoDatabase {
 
     // Super Attack Description References
     public static final String[] superAttacksDesc = {
-            "(12+ KI) Causes immense damage to enemy and raises ATK for 1 turn  (11+ KI) Massively raises ATK for 1 turn and causes immense damage to enemy (9+ KI) Causes immense damage to enemy and greatly lowers DEF ",
-            "Causes immense damage with a rare chance to stun the enemy",
-            "Causes immense damage to enemy",
-            "Causes immense damage to enemy and greatly lowers DEF",
-            "Causes immense damage, allies' ATK +30% for 1 turn",
-            "Causes immense damage to enemy and greatly lowers DEF",
-            "Causes immense damage to enemy Causes immense damage to enemy and lowers ATK & DEF",
-            "Causes supreme damage, rare chance to stun enemy",
-            "Causes supreme damage to enemy and raises ATK for 1 turn",
-            "Causes supreme damage to enemy and raises DEF by 30% for 3 turns",
             "Causes immense damage to enemy and lowers ATK & DEF",
             "Causes immense damage to enemy Massively raises ATK for 1 turn and causes immense damage to enemy Causes extreme damage to enemy and greatly lowers DEF",
             "Causes immense damage to enemy and raises ATK & DEF Causes mass damage to all enemies and raises ATK & DEF",
@@ -246,16 +246,6 @@ public class CardInfoDatabase {
 
     // Passive Skill Name References
     public static final String[] passiveSkillsName = {
-            "Ultra Super Saiyan",
-            "Earth-Shaking Strength",
-            "Unfathomable Speed",
-            "Mastery of Strength",
-            "Flawless Combat",
-            "Evil Domination",
-            "The Rush of Battle",
-            "Battle to the Death",
-            "Emotional Release",
-            "True Comrade",
             "Shadowy Strength",
             "Furious Fighting Spirit",
             "End of the Game",
@@ -274,16 +264,6 @@ public class CardInfoDatabase {
 
     // Passive Skill Description References
     public static final String[] passiveSkillsDesc = {
-            "ATK +120%; plus an additional ATK +60% and DEF -30% for 7 turns from start of turn",
-            "ATK +120% and ATK +20% per Rainbow Ki Sphere obtained",
-            "Great chance to launch up to 2 additional attacks, each of which has a chance to become a Super Attack; damage received from normal ATKs -30%, counter with tremendous power",
-            "At start of turn, Ki +3 for Extreme Type and ATK +100%",
-            "Damage received from normal ATKs -80%, counter with tremendous power",
-            "ATK +80%; all enemies' ATK -30%",
-            "Extreme Type Ki +3; ATK +3000 for every Ki Sphere obtained",
-            "ATK +100% when performing Super Attack",
-            "ATK +15% for every Ki Sphere obtained",
-            "Recovers 10% HP at start of turn; ATK +25% with each attack received (up to 100%)",
             "ATK +50000 and DEF +20000 when facing 2 or less enemies",
             "ATK +120% when performing super attack",
             "ATK +100% at start of turn",
@@ -302,16 +282,6 @@ public class CardInfoDatabase {
 
     // Holds each card's hp stats
     public static final Integer[] hp = {
-            15900, // UR (PHY) SSJ3 GOTENKS
-            15225, // UR (TEQ) SSJ3 GOKU AGNEL
-            15700, // UR (PHY) SSB VEGETO
-            16020, // UR (AGL) GOKU BLACK ROSE
-            15750, // UR (AGL) SSJ VEGETO
-            14520, // UR (STR) OMEGA SHENRON
-            15950, // UR (PHY) GOKU BLACK
-            14806, // UR (AGL) MAJIN VEGETA
-            14994, // UR (INT) SSJ2 GOHAN
-            14488, // UR (TEQ) GOKU BLACK AND ZAMASU
             14695, // UR (TEQ) MASKED SAIYAN
             14012, // UR (TEQ) SSJ3 GOTENKS
             14524, // UR (STR) PERFECT CELL
@@ -330,16 +300,6 @@ public class CardInfoDatabase {
 
     // Holds each card's att stats
     public static final Integer[] att = {
-            15900, // UR (PHY) SSJ3 GOTENKS
-            16750, // UR (TEQ) SSJ3 GOKU AGNEL
-            16500, // UR (PHY) SSB VEGETO
-            15100, // UR (AGL) GOKU BLACK ROSE
-            15840, // UR (AGL) SSJ VEGETO
-            14203, // UR (STR) OMEGA SHENRON
-            14800, // UR (PHY) GOKU BLACK
-            14153, // UR (AGL) MAJIN VEGETA
-            14365, // UR (INT) SSJ2 GOHAN
-            14893, // UR (TEQ) GOKU BLACK AND ZAMASU
             14948, // UR (TEQ) MASKED SAIYAN
             14757, // UR (TEQ) SSJ3 GOTENKS
             14226, // UR (STR) PERFECT CELL
@@ -358,16 +318,6 @@ public class CardInfoDatabase {
 
     // Holds each card's def stats
     public static final Integer[] def = {
-            9850, // UR (PHY) SSJ3 GOTENKS
-            9625, // UR (TEQ) SSJ3 GOKU AGNEL
-            9151, // UR (PHY) SSB VEGETO
-            10155, // UR (AGL) GOKU BLACK ROSE
-            9625, // UR (AGL) SSJ VEGETO
-            11611, // UR (STR) OMEGA SHENRON
-            9125, // UR (PHY) GOKU BLACK
-            10169, // UR (AGL) MAJIN VEGETA
-            9609, // UR (INT) SSJ2 GOHAN
-            9503, // UR (TEQ) GOKU BLACK AND ZAMASU
             9143, // UR (TEQ) MASKED SAIYAN
             9906, // UR (TEQ) SSJ3 GOTENKS
             9664, // UR (STR) PERFECT CELL
@@ -386,16 +336,6 @@ public class CardInfoDatabase {
 
     // Holds each card's cost value
     public static final Integer[] cost = {
-            58,
-            58,
-            48,
-            48,
-            48,
-            48,
-            48,
-            50,
-            50,
-            50,
             42,
             48,
             48,
