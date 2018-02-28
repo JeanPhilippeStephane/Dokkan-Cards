@@ -57,16 +57,6 @@ public class ImageAdapter extends BaseAdapter {
 
     // References to our images
     public static final Integer[] mThumbIds = {
-            R.mipmap.naught_but_rampage_super_saiyan_3_gotenks_icon,
-            R.mipmap.astoundingtransformationsupersaiyan3gokuangel_icon,
-            R.mipmap.azureomnipotencesupersaiyangodssvegito_icon,
-            R.mipmap.rosestainedsupersaiyanbokublacksupersaiyanrose_icon,
-            R.mipmap.unparalleledgoldenkisupervegito_icon,
-            R.mipmap.hopelessminusenergyomegashenron_icon,
-            R.mipmap.darkmenacegokublack_icon,
-            R.mipmap.thefinalclashmajinvegeta_icon,
-            R.mipmap.fatalresolvesupersaiyan2gohanyouth_icon,
-            R.mipmap.distortedjusticegokublackandzamasu_icon,
             R.mipmap.darkintentionsmaskedsaiyan_icon,
             R.mipmap.grimreaperofdeathsrampagesupersaiyan3gotenks_icon,
             R.mipmap.welcometohellperfectcell_icon,
