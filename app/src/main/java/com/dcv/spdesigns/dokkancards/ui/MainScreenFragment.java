@@ -112,18 +112,7 @@ public class MainScreenFragment extends Fragment {
      * which icon from the DataBase was selected
      */
     private void addSelectedCardToGlobalUserBox(int position) {
-        GlobalDataHolder.dataHolder.add(ImageAdapter.mThumbIds[position]);
-        GlobalDataHolder.cardArts.add(CardInfoDatabase.cardArts[position]);
-        GlobalDataHolder.cardNameAndDescription.add(CardInfoDatabase.cardNameAndDescription[position]);
-        GlobalDataHolder.leaderSkills.add(CardInfoDatabase.leaderSkills[position]);
-        GlobalDataHolder.superAttacksName.add(CardInfoDatabase.superAttacksName[position]);
-        GlobalDataHolder.superAttacksDesc.add(CardInfoDatabase.superAttacksDesc[position]);
-        GlobalDataHolder.passiveSkillsName.add(CardInfoDatabase.passiveSkillsName[position]);
-        GlobalDataHolder.passiveSkillsDesc.add(CardInfoDatabase.passiveSkillsDesc[position]);
-        GlobalDataHolder.hp.add(CardInfoDatabase.hp[position]);
-        GlobalDataHolder.att.add(CardInfoDatabase.att[position]);
-        GlobalDataHolder.def.add(CardInfoDatabase.def[position]);
-        GlobalDataHolder.cost.add(CardInfoDatabase.cost[position]);
+        GlobalDataHolder.cards.add(CardInfoDatabase.cardDatabase[position]);
     }
 
     /**
@@ -133,18 +122,7 @@ public class MainScreenFragment extends Fragment {
      * which icon from the DataBase was selected
      */
     private void addSelectedCardToJPUserBox(int position) {
-        JPDataHolder.dataHolder.add(ImageAdapter.mThumbIds[position]);
-        JPDataHolder.cardArts.add(CardInfoDatabase.cardArts[position]);
-        JPDataHolder.cardNameAndDescription.add(CardInfoDatabase.cardNameAndDescription[position]);
-        JPDataHolder.leaderSkills.add(CardInfoDatabase.leaderSkills[position]);
-        JPDataHolder.superAttacksName.add(CardInfoDatabase.superAttacksName[position]);
-        JPDataHolder.superAttacksDesc.add(CardInfoDatabase.superAttacksDesc[position]);
-        JPDataHolder.passiveSkillsName.add(CardInfoDatabase.passiveSkillsName[position]);
-        JPDataHolder.passiveSkillsDesc.add(CardInfoDatabase.passiveSkillsDesc[position]);
-        JPDataHolder.hp.add(CardInfoDatabase.hp[position]);
-        JPDataHolder.att.add(CardInfoDatabase.att[position]);
-        JPDataHolder.def.add(CardInfoDatabase.def[position]);
-        JPDataHolder.cost.add(CardInfoDatabase.cost[position]);
+        JPDataHolder.cards.add(CardInfoDatabase.cardDatabase[position]);
     }
 
 }

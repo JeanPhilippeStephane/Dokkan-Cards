@@ -121,25 +121,17 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case R.id.nav_UserBoxGLB:
                         changeActionBarColor(2);
-                        // Passing the data to the new fragment
-                        Bundle dataBundle = new Bundle();
-                        dataBundle.putIntegerArrayList("DATA_LIST", GlobalDataHolder.dataHolder);
 
                         // Initializing the globalUserBox Fragment and passing  it the data bundle
                         UserBoxGLBFragment glbFragment = new UserBoxGLBFragment();
-                        glbFragment.setArguments(dataBundle);
                         fragmentTransaction.replace(R.id.FrameLayoutContainer,glbFragment,"GLOBAL_FRAGMENT");
                         fragmentTransaction.commit();
                         break;
                     case R.id.nav_UserBoxJP:
                         changeActionBarColor(3);
-                        // Passing the data to the new fragment
-                        Bundle JPdataBundle = new Bundle();
-                        JPdataBundle.putIntegerArrayList("DATA_LIST_JP", JPDataHolder.dataHolder);
 
                         // Initializing the jpUserBox fragment and passing it the data bundle
                         UserBoxJPFragment jpFragment = new UserBoxJPFragment();
-                        jpFragment.setArguments(JPdataBundle);
                         fragmentTransaction.replace(R.id.FrameLayoutContainer,jpFragment,"JP_FRAGMENT");
                         fragmentTransaction.commit();
                         break;
@@ -168,12 +160,6 @@ public class MainActivity extends AppCompatActivity {
                         dokkanIntent.setData(Uri.parse("http://dbz-dokkan.bngames.net/en/"));
                         startActivity(dokkanIntent);
                         break;
-                        //TODO:sp Add a settings item in a future update
-//                    case R.id.settings:
-//                        // ADD SETTINGS FRAGMENT
-//                        SettingsFragment settingsFragment = new SettingsFragment();
-//                        fragmentTransaction.replace(R.id.FrameLayoutContainer,settingsFragment);
-//                        break;
                     case R.id.nav_about:
                         Intent aboutIntent = new Intent(MainActivity.this, AboutPageActivity.class);
                         startActivity(aboutIntent);
@@ -198,8 +184,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onStop() {
         super.onStop();
         // Write all the data retrieved from BOTH GlobalDataHolder & JPDataHolder to the internal memory
-        SerializeGLBData.Write(GlobalDataHolder.dataHolder,GlobalDataHolder.cardArts,GlobalDataHolder.cardNameAndDescription,GlobalDataHolder.leaderSkills,GlobalDataHolder.superAttacksName,GlobalDataHolder.superAttacksDesc,GlobalDataHolder.passiveSkillsName,GlobalDataHolder.passiveSkillsDesc,GlobalDataHolder.hp,GlobalDataHolder.att,GlobalDataHolder.def, GlobalDataHolder.cost,this);
-        SerializeJPData.Write(JPDataHolder.dataHolder,JPDataHolder.cardArts,JPDataHolder.cardNameAndDescription,JPDataHolder.leaderSkills,JPDataHolder.superAttacksName,JPDataHolder.superAttacksDesc,JPDataHolder.passiveSkillsName,JPDataHolder.passiveSkillsDesc,JPDataHolder.hp,JPDataHolder.att,JPDataHolder.def,JPDataHolder.cost,this);
+        SerializeGLBData.Write(GlobalDataHolder.cards,this);
+        SerializeJPData.Write(JPDataHolder.cards,this);
     }
 
     @Override
@@ -258,18 +244,7 @@ public class MainActivity extends AppCompatActivity {
      * Calls every available Read method to retrieve all available data from the GLB database
      */
     private void callReadDataMethodsGLB() {
-        GlobalDataHolder.dataHolder = SerializeGLBData.ReadIcons(this);
-        GlobalDataHolder.cardArts = SerializeGLBData.ReadCardArts(this);
-        GlobalDataHolder.cardNameAndDescription = SerializeGLBData.ReadcardNameAndDescription(this);
-        GlobalDataHolder.leaderSkills = SerializeGLBData.ReadLeaderSkills(this);
-        GlobalDataHolder.superAttacksName = SerializeGLBData.ReadSuperAttacksName(this);
-        GlobalDataHolder.superAttacksDesc = SerializeGLBData.ReadSuperAttacksDesc(this);
-        GlobalDataHolder.passiveSkillsName = SerializeGLBData.ReadPassiveSkillsName(this);
-        GlobalDataHolder.passiveSkillsDesc = SerializeGLBData.ReadPassiveSkillsDesc(this);
-        GlobalDataHolder.hp = SerializeGLBData.ReadHP(this);
-        GlobalDataHolder.att = SerializeGLBData.ReadATT(this);
-        GlobalDataHolder.def = SerializeGLBData.ReadDEF(this);
-        GlobalDataHolder.cost = SerializeGLBData.ReadCost(this);
+        GlobalDataHolder.cards = SerializeGLBData.ReadCards(this);
         Log.d("Read Methods[GLB]", "ReadMethods called!");
     }
 
@@ -277,18 +252,7 @@ public class MainActivity extends AppCompatActivity {
      * Calls every available Read method to retrieve all available data from the JP database
      */
     private void callReadDataMethodsJP() {
-        JPDataHolder.dataHolder = SerializeJPData.ReadIcons(this);
-        JPDataHolder.cardArts = SerializeJPData.ReadCardArts(this);
-        JPDataHolder.cardNameAndDescription = SerializeJPData.ReadcardNameAndDescription(this);
-        JPDataHolder.leaderSkills = SerializeJPData.ReadLeaderSkills(this);
-        JPDataHolder.superAttacksName = SerializeJPData.ReadSuperAttacksName(this);
-        JPDataHolder.superAttacksDesc = SerializeJPData.ReadSuperAttacksDesc(this);
-        JPDataHolder.passiveSkillsName = SerializeJPData.ReadPassiveSkillsName(this);
-        JPDataHolder.passiveSkillsDesc = SerializeJPData.ReadPassiveSkillsDesc(this);
-        JPDataHolder.hp = SerializeJPData.ReadHP(this);
-        JPDataHolder.att = SerializeJPData.ReadATT(this);
-        JPDataHolder.def = SerializeJPData.ReadDEF(this);
-        JPDataHolder.cost = SerializeJPData.ReadCost(this);
+        JPDataHolder.cards = SerializeJPData.ReadCards(this);
         Log.d("Read Methods[JP]", "ReadMethods called!");
     }
 
@@ -328,9 +292,9 @@ public class MainActivity extends AppCompatActivity {
 
     private void CallWriteDataMethods() {
         // Write all the -empty- data from GlobalDataHolder to the internal memory to avoid a first time read error
-        SerializeGLBData.Write(GlobalDataHolder.dataHolder,GlobalDataHolder.cardArts,GlobalDataHolder.cardNameAndDescription,GlobalDataHolder.leaderSkills,GlobalDataHolder.superAttacksName,GlobalDataHolder.superAttacksDesc,GlobalDataHolder.passiveSkillsName,GlobalDataHolder.passiveSkillsDesc,GlobalDataHolder.hp,GlobalDataHolder.att,GlobalDataHolder.def,GlobalDataHolder.cost,this);
+        SerializeGLBData.Write(GlobalDataHolder.cards,this);
         // Write all the -empty- data from JPDataHolder to the internal memory to avoid a first time read error
-        SerializeJPData.Write(JPDataHolder.dataHolder,JPDataHolder.cardArts,JPDataHolder.cardNameAndDescription,JPDataHolder.leaderSkills,JPDataHolder.superAttacksName,JPDataHolder.superAttacksDesc,JPDataHolder.passiveSkillsName,JPDataHolder.passiveSkillsDesc,JPDataHolder.hp,JPDataHolder.att,JPDataHolder.def,JPDataHolder.cost,this);
+        SerializeJPData.Write(JPDataHolder.cards,this);
     }
 
     /**

@@ -38,55 +38,55 @@ public class Card {
         this.mLinkSkills = mLinkSkills;
     }
 
-    public Integer getmCardArt() {
+    public Integer getCardArt() {
         return mCardArt;
     }
 
-    public Integer getmCardIcon() {
+    public Integer getCardIcon() {
         return mCardIcon;
     }
 
-    public String getmName() {
+    public String getName() {
         return mNameDescription;
     }
 
-    public String getmLeaderSkill() {
+    public String getLeaderSkill() {
         return mLeaderSkill;
     }
 
-    public String getmSuperAttackName() {
+    public String getSuperAttackName() {
         return mSuperAttackName;
     }
 
-    public String getmSuperAttackDesc() {
+    public String getSuperAttackDesc() {
         return mSuperAttackDesc;
     }
 
-    public String getmPassiveSkillName() {
+    public String getPassiveSkillName() {
         return mPassiveSkillName;
     }
 
-    public String getmPassiveSkillDesc() {
+    public String getPassiveSkillDesc() {
         return mPassiveSkillDesc;
     }
 
-    public int getHp() {
-        return hp;
+    public String getHp() {
+        return String.valueOf(hp);
     }
 
-    public int getAtt() {
-        return att;
+    public String getAtt() {
+        return String.valueOf(att);
     }
 
-    public int getDef() {
-        return def;
+    public String getDef() {
+        return String.valueOf(def);
     }
 
-    public int getCost() {
-        return cost;
+    public String getCost() {
+        return String.valueOf(cost);
     }
 
-    public List<String> getmLinkSkills() {
+    public List<String> getLinkSkills() {
         return mLinkSkills;
     }
 }

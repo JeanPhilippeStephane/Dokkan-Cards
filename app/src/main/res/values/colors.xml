@@ -2,8 +2,8 @@
 <resources>
 
     <!-- MAIN SCREEN PALLET -->
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#FF303F9F</color>
+    <color name="colorPrimary">#32383d</color>
+    <color name="colorPrimaryDark">#23272A</color>
     <color name="colorAccent">#FF4081</color>
 
     <!-- USER BOX GLB PALLET -->
@@ -15,10 +15,8 @@
     <color name="colorSecondaryJP">#9e2d2d</color>
 
     <!-- NAVIGATION MENU PALLET -->
-    <color name="NavigationDrawerHeader">#3F51B5</color>
+    <color name="NavigationDrawerHeader">#23272A</color> <!-- #3F51B5 -->
     <color name="NavActionBarTextColor">#FFFFFF</color>
-
-    <!-- CARD DETAILS PALLET -->
 
     <!-- ABOUT PAGE [SUB-PAGES] PALLET -->
     <color name="Contributors_background">#b01818</color>

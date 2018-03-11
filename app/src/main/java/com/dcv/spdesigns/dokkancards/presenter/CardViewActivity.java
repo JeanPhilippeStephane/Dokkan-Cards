@@ -111,14 +111,14 @@ public class CardViewActivity extends AppCompatActivity {
      * @param selectedItemPosition Used to initialize this activity's views if the intent was called from the MainScreen Fragment
      */
     private void initCardViewMainScreen(int selectedItemPosition) {
-        cardArtImageView.setImageResource(CardInfoDatabase.cardArts[selectedItemPosition]);
-        leaderSkillDescText.setText(CardInfoDatabase.leaderSkills[selectedItemPosition]);
-        superAttackTitleText.setText(CardInfoDatabase.superAttacksName[selectedItemPosition]);
-        superAttackDescText.setText(CardInfoDatabase.superAttacksDesc[selectedItemPosition]);
-        hpText.setText(CardInfoDatabase.hp[selectedItemPosition].toString());
-        attText.setText(CardInfoDatabase.att[selectedItemPosition].toString());
-        defText.setText(CardInfoDatabase.def[selectedItemPosition].toString());
-        costText.setText(CardInfoDatabase.cost[selectedItemPosition].toString());
+        cardArtImageView.setImageResource(CardInfoDatabase.cardDatabase[selectedItemPosition].getCardArt());
+        leaderSkillDescText.setText(CardInfoDatabase.cardDatabase[selectedItemPosition].getLeaderSkill());
+        superAttackTitleText.setText(CardInfoDatabase.cardDatabase[selectedItemPosition].getSuperAttackName());
+        superAttackDescText.setText(CardInfoDatabase.cardDatabase[selectedItemPosition].getSuperAttackDesc());
+        hpText.setText(CardInfoDatabase.cardDatabase[selectedItemPosition].getHp());
+        attText.setText(CardInfoDatabase.cardDatabase[selectedItemPosition].getAtt());
+        defText.setText(CardInfoDatabase.cardDatabase[selectedItemPosition].getDef());
+        costText.setText(CardInfoDatabase.cardDatabase[selectedItemPosition].getCost());
     }
 
     /**
@@ -126,14 +126,14 @@ public class CardViewActivity extends AppCompatActivity {
      * @param selectedItemPosition Used to initialize this activity's views if the intent was called from the Global Fragment
      */
     private void initCardViewGLB(int selectedItemPosition) {
-        cardArtImageView.setImageResource(GlobalDataHolder.cardArts.get(selectedItemPosition));
-        leaderSkillDescText.setText(GlobalDataHolder.leaderSkills.get(selectedItemPosition));
-        superAttackTitleText.setText(GlobalDataHolder.superAttacksName.get(selectedItemPosition));
-        superAttackDescText.setText(GlobalDataHolder.superAttacksDesc.get(selectedItemPosition));
-        hpText.setText(GlobalDataHolder.hp.get(selectedItemPosition).toString());
-        attText.setText(GlobalDataHolder.att.get(selectedItemPosition).toString());
-        defText.setText(GlobalDataHolder.def.get(selectedItemPosition).toString());
-        costText.setText(GlobalDataHolder.cost.get(selectedItemPosition).toString());
+        cardArtImageView.setImageResource(GlobalDataHolder.cards.get(selectedItemPosition).getCardArt());
+        leaderSkillDescText.setText(GlobalDataHolder.cards.get(selectedItemPosition).getLeaderSkill());
+        superAttackTitleText.setText(GlobalDataHolder.cards.get(selectedItemPosition).getSuperAttackName());
+        superAttackDescText.setText(GlobalDataHolder.cards.get(selectedItemPosition).getSuperAttackDesc());
+        hpText.setText(GlobalDataHolder.cards.get(selectedItemPosition).getHp());
+        attText.setText(GlobalDataHolder.cards.get(selectedItemPosition).getAtt());
+        defText.setText(GlobalDataHolder.cards.get(selectedItemPosition).getDef());
+        costText.setText(GlobalDataHolder.cards.get(selectedItemPosition).getCost());
     }
 
     /**
@@ -141,13 +141,13 @@ public class CardViewActivity extends AppCompatActivity {
      * @param selectedItemPosition Used to initialize this activity's views if the intent was called from the JP Fragment
      */
     private void initCardViewJP(int selectedItemPosition) {
-        cardArtImageView.setImageResource(JPDataHolder.cardArts.get(selectedItemPosition));
-        leaderSkillDescText.setText(JPDataHolder.leaderSkills.get(selectedItemPosition));
-        superAttackTitleText.setText(JPDataHolder.superAttacksName.get(selectedItemPosition));
-        superAttackDescText.setText(JPDataHolder.superAttacksDesc.get(selectedItemPosition));
-        hpText.setText(JPDataHolder.hp.get(selectedItemPosition).toString());
-        attText.setText(JPDataHolder.att.get(selectedItemPosition).toString());
-        defText.setText(JPDataHolder.def.get(selectedItemPosition).toString());
-        costText.setText(JPDataHolder.cost.get(selectedItemPosition).toString());
+        cardArtImageView.setImageResource(JPDataHolder.cards.get(selectedItemPosition).getCardArt());
+        leaderSkillDescText.setText(JPDataHolder.cards.get(selectedItemPosition).getLeaderSkill());
+        superAttackTitleText.setText(JPDataHolder.cards.get(selectedItemPosition).getSuperAttackName());
+        superAttackDescText.setText(JPDataHolder.cards.get(selectedItemPosition).getSuperAttackDesc());
+        hpText.setText(JPDataHolder.cards.get(selectedItemPosition).getHp());
+        attText.setText(JPDataHolder.cards.get(selectedItemPosition).getAtt());
+        defText.setText(JPDataHolder.cards.get(selectedItemPosition).getDef());
+        costText.setText(JPDataHolder.cards.get(selectedItemPosition).getCost());
     }
 }
