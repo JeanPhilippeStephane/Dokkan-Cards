@@ -9,6 +9,8 @@ import android.widget.ImageView;
 
 import com.dcv.spdesigns.dokkancards.R;
 
+import java.util.ArrayList;
+
 /**
  * DokkanCards was
  * Created by Stelios Papamichail on 11/19/2017.
@@ -21,11 +23,12 @@ public class ImageAdapter extends BaseAdapter {
 
     public ImageAdapter(Context c) {
         mContext = c;
+        setImageIcons();
     }
 
     @Override
     public int getCount() {
-        return mThumbIds.length;
+        return cardIcons.size();
     }
 
     @Override
@@ -51,25 +54,21 @@ public class ImageAdapter extends BaseAdapter {
         } else {
             imageView = (ImageView) convertView;
         }
-        imageView.setImageResource(mThumbIds[position]);
+        imageView.setImageResource(cardIcons.get(position));
         return imageView;
     }
 
     // References to our images
-    public static final Integer[] mThumbIds = {
-            R.mipmap.darkintentionsmaskedsaiyan_icon,
-            R.mipmap.grimreaperofdeathsrampagesupersaiyan3gotenks_icon,
-            R.mipmap.welcometohellperfectcell_icon,
-            R.mipmap.bladeofhopeanddreamssupersaiyantrunksfuture_icon,
-            R.mipmap.fullpowersalutationaralenorimaki_icon,
-            R.mipmap.passionofthewarriorracesupersaiyangodssvegeta_icon,
-            R.mipmap.hideoussupersaiyansupersaiyanbroly_icon,
-            R.mipmap.countdowntodespairmajinbuuultimategohan_icon,
-            R.mipmap.eternalhorrorlegendarysupersaiyanbroly_icon,
-            R.mipmap.wrathoftheabsolutegodfusionzamasu_icon,
-            R.mipmap.startling_super_warrior_super_saiyan_trunks_teen_icon,
-            R.mipmap.thehopeoftheuniversegoku_icon,
-            R.mipmap.agentofdestructionsynshenron_icon,
-            R.mipmap.fireofvengeancegoldenfrieza_icon
-    };
+    public static ArrayList<Integer> cardIcons = new ArrayList<>();
+
+    /**
+     * Initializes the cardIcons array with each card's icon from the actual database
+     * @return Returns an ArrayList of Integers converted to an Array
+     */
+    private void setImageIcons() {
+
+        for (int i=0; i < CardInfoDatabase.cardDatabase.length;i++) {
+            cardIcons.add(CardInfoDatabase.cardDatabase[i].getCardIcon());
+        }
+    }
 }

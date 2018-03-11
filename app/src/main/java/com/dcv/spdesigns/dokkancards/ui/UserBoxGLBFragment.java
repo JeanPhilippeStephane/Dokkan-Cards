@@ -27,7 +27,7 @@ import java.util.ArrayList;
 public class UserBoxGLBFragment extends Fragment {
 
     private GridView globalGridView;
-    private static UserBoxGlbImageAdapter adapter;
+    private UserBoxGlbImageAdapter adapter;
 
     public UserBoxGLBFragment() {
         // Required empty public constructor
@@ -44,13 +44,7 @@ public class UserBoxGLBFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        // Get the data to be used to initialize the UserBoxGLBFragment's grid
-        try {
-            ArrayList<Integer> data = getArguments().getIntegerArrayList("DATA_LIST");
-            adapter = new UserBoxGlbImageAdapter(this.getContext(), data);
-        } catch (NullPointerException npe) {
-            npe.printStackTrace();
-        }
+        adapter = new UserBoxGlbImageAdapter(this.getContext());
 
         globalGridView = view.findViewById(R.id.userBoxGlbGridView);
         globalGridView.setAdapter(adapter);
@@ -109,22 +103,7 @@ public class UserBoxGLBFragment extends Fragment {
     }
 
     private void removeCardFromGLBBox(int position) {
-        GlobalDataHolder.dataHolder.remove(position);
-        GlobalDataHolder.cardArts.remove(position);
-        GlobalDataHolder.cardNameAndDescription.remove(position);
-        GlobalDataHolder.leaderSkills.remove(position);
-        GlobalDataHolder.superAttacksName.remove(position);
-        GlobalDataHolder.superAttacksDesc.remove(position);
-        GlobalDataHolder.passiveSkillsName.remove(position);
-        GlobalDataHolder.passiveSkillsDesc.remove(position);
-        GlobalDataHolder.hp.remove(position);
-        GlobalDataHolder.att.remove(position);
-        GlobalDataHolder.def.remove(position);
-        GlobalDataHolder.cost.remove(position);
+        GlobalDataHolder.cards.remove(position);
         UserBoxGlbImageAdapter.refreshFragmentView(adapter);
-    }
-
-    public static UserBoxGlbImageAdapter getUserBoxAdapter() {
-        return adapter;
     }
 }

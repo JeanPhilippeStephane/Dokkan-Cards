@@ -39,15 +39,7 @@ public class SortingDialog extends DialogFragment {
                 new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
-                        if (i == 1) {
-                            if (getActivity().getSupportFragmentManager().findFragmentByTag("GLOBAL_FRAGMENT") != null) {
-                                sortGLBAlphabetically();
-                            }
-                        }
-                        for (int j = 0; j < GlobalDataHolder.cardNameAndDescription.size() -1; j++) {
-                            //Log.v("card_names", GlobalDataHolder.cardNameAndDescription.get(j));
-                            UserBoxGlbImageAdapter.refreshFragmentView(UserBoxGLBFragment.getUserBoxAdapter());
-                        }
+                        //TODO:sp SORT THE CARDS
                     }
                 });
         builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
@@ -64,33 +56,6 @@ public class SortingDialog extends DialogFragment {
             }
         });
         return builder.create();
-    }
-
-    private void sortGLBAlphabetically() {
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
-            GlobalDataHolder.cardNameAndDescription.sort(new Comparator<String>() {
-                @Override
-                public int compare(String s1, String s2) {
-                    int s1Pos = GlobalDataHolder.cardNameAndDescription.indexOf(s1);
-                    int s2Pos = GlobalDataHolder.cardNameAndDescription.indexOf(s2);
-                    if(s1.equalsIgnoreCase(s2)) {
-                        return 0;
-                    } else if(s1.compareToIgnoreCase(s2) > 0)  { //greater than s2
-                        Log.v("card_names","1");
-                        Collections.swap(UserBoxGlbImageAdapter.mGLBIcons,s1Pos,s2Pos);
-//                        UserBoxGlbImageAdapter.refreshFragmentView(UserBoxGLBFragment.getUserBoxAdapter());
-                        return 1;
-                    } else if(s1.compareToIgnoreCase(s2) < 0) { // less than s2
-                        Log.v("card_names","-1");
-                        Collections.swap(UserBoxGlbImageAdapter.mGLBIcons,s2Pos,s1Pos);
-//                        UserBoxGlbImageAdapter.refreshFragmentView(UserBoxGLBFragment.getUserBoxAdapter());
-                        return -1;
-                    } else {
-                        return 100; // error code
-                    }
-                }
-            });
-        }
     }
 
     private void createToast() {

@@ -7,6 +7,8 @@ import android.widget.BaseAdapter;
 import android.widget.GridView;
 import android.widget.ImageView;
 
+import com.dcv.spdesigns.dokkancards.model.main.CardInfoDatabase;
+
 import java.util.ArrayList;
 
 /**
@@ -18,11 +20,11 @@ public class UserBoxGlbImageAdapter extends BaseAdapter {
 
     private final Context mContext;
 
-    public static ArrayList<Integer> mGLBIcons = new ArrayList<>();
+    private static ArrayList<Integer> mGLBIcons = new ArrayList<>();
 
-    public UserBoxGlbImageAdapter(Context c , ArrayList<Integer> data) {
+    public UserBoxGlbImageAdapter(Context c) {
         mContext = c;
-        mGLBIcons = data;
+        setImageIconsGLB();
     }
 
     @Override
@@ -52,9 +54,18 @@ public class UserBoxGlbImageAdapter extends BaseAdapter {
         } else {
             imageView = (ImageView) convertView;
         }
-
         imageView.setImageResource(mGLBIcons.get(position));
         return imageView;
+    }
+
+    /**
+     * Initializes the cardIcons array with each card's icon from the global database
+     * @return Returns an ArrayList of Integers
+     */
+    private void setImageIconsGLB() {
+        for (int i = 0; i < GlobalDataHolder.cards.size(); i++) {
+            mGLBIcons.add(GlobalDataHolder.cards.get(i).getCardIcon());
+        }
     }
 
     /**

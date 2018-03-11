@@ -44,13 +44,7 @@ public class UserBoxJPFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        // Get the data to be used to initialize the UserBoxJPFragment's grid
-        try {
-            ArrayList<Integer> data = getArguments().getIntegerArrayList("DATA_LIST_JP");
-            adapter = new UserBoxJpImageAdapter(this.getContext(), data);
-        } catch (NullPointerException npe) {
-            npe.printStackTrace();
-        }
+        adapter = new UserBoxJpImageAdapter(this.getContext());
 
         jpGridView = view.findViewById(R.id.userBoxJPGridView);
         jpGridView.setAdapter(adapter);
@@ -109,18 +103,7 @@ public class UserBoxJPFragment extends Fragment {
     }
 
     private void removeCardFromJPBox(int position) {
-        JPDataHolder.dataHolder.remove(position);
-        JPDataHolder.cardArts.remove(position);
-        JPDataHolder.cardNameAndDescription.remove(position);
-        JPDataHolder.leaderSkills.remove(position);
-        JPDataHolder.superAttacksName.remove(position);
-        JPDataHolder.superAttacksDesc.remove(position);
-        JPDataHolder.passiveSkillsName.remove(position);
-        JPDataHolder.passiveSkillsDesc.remove(position);
-        JPDataHolder.hp.remove(position);
-        JPDataHolder.att.remove(position);
-        JPDataHolder.def.remove(position);
-        JPDataHolder.cost.remove(position);
+        JPDataHolder.cards.remove(position);
         UserBoxJpImageAdapter.refreshFragmentView(adapter);
     }
 }

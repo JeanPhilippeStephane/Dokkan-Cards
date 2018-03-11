@@ -91,6 +91,34 @@ public class CardInfoDatabase {
 
     private static Card c40 = new Card(R.mipmap.distortedjusticegokublackandzamasu_art,R.mipmap.distortedjusticegokublackandzamasu_icon,"Distorted Justice Goku Black & Zamasu","TEQ Type Ki +3 and HP, ATK & DEF +70%","Holy Light Grenade","Causes supreme damage to enemy and raises DEF by 30% for 3 turns","True Comrade","Recovers 10% HP at start of turn; ATK +25% with each attack received (up to 100%)",14488,14893,9503,50);
 
+    private static Card c41 = new Card(R.mipmap.darkintentionsmaskedsaiyan_art,R.mipmap.darkintentionsmaskedsaiyan_icon,"Dark Intentions Masked Saiyan","All Types Ki +3 and HP, ATK & DEF +50%","Shadowy Strength","Causes immense damage to enemy and lowers ATK & DEF","Shadowy Strength","ATK +50000 and DEF +20000 when facing 2 or less enemies",14695,14948, 9143,42);
+
+    private static Card c42 = new Card(R.mipmap.grimreaperofdeathsrampagesupersaiyan3gotenks_art, R.mipmap.grimreaperofdeathsrampagesupersaiyan3gotenks_icon,"Grim Reaper of Death's Rampage Super Saiyan 3 Gotenks","TEQ Ki +3 & HP, ATK, & DEF +70%","Super Ghost Kamikaze Attack (9 & 10 Ki) Charging Ultra Buu Buu Volleyball Attack (11 Ki) Super Ghost Kamikaze Attack (12 Ki)","Causes immense damage to enemy Massively raises ATK for 1 turn and causes immense damage to enemy Causes extreme damage to enemy and greatly lowers DEF", "Furious Fighting Spirit","ATK +120% when performing super attack",14012, 14757, 9906,48);
+
+    private static Card c43 = new Card(R.mipmap.welcometohellperfectcell_art,R.mipmap.welcometohellperfectcell_icon,"Welcome to Hell Perfect Cell","STR Type HP, ATK & DEF +100%","Solar Kamehameha (at 10 or 12 Ki) Self-Destruct (at 11 Ki)","Causes immense damage to enemy and raises ATK & DEF | Causes mass damage to all enemies and raises ATK & DEF","End of the Game", "ATK +100% at start of turn",14524,14226,9664,48);
+
+    private static Card c44 = new Card(R.mipmap.bladeofhopeanddreamssupersaiyantrunksfuture_art, R.mipmap.bladeofhopeanddreamssupersaiyantrunksfuture_icon,"Blade of Hope and Dreams Super Saiyan Trunks (Future)", "Super Type Ki +1, HP, ATK & DEF +70%","Final Hope Slash","Causes immense damage to enemy and greatly lowers DEF","Light of Miracles", "Change STR orbs to INT orbs; ATK +15% per INT orb obtained",14524,14818,14074,48);
+
+    private static Card c45 = new Card(R.mipmap.fullpowersalutationaralenorimaki_art,R.mipmap.fullpowersalutationaralenorimaki_icon,"Full-Power Salutation Arale Norimaki","All Types Ki +3 and HP, ATK & DEF +30%","N'cha Cannon | N'cha Cannon x100 (30% chance)","Causes immense damage to enemy Massively raises ATK for 1 turn Causes immense damage to enemy","N'cha!","ATK +120% when performing a Super Attack", 14212,13150,10375,48);
+
+    private static Card c46 = new Card(R.mipmap.passionofthewarriorracesupersaiyangodssvegeta_art,R.mipmap.passionofthewarriorracesupersaiyangodssvegeta_icon,"Passion of the Warrior Race Super Saiyan God SS Vegeta","INT Type HP, ATK & DEF +100%","Pride of Our Warrior Race","Causes immense damage and raises ATK for 3 turns", "Princely Pressure","ATK +100%; Extreme Type enemies ATK & DEF -20%",13931,14351,9752,48);
+
+    private static Card c47 = new Card( R.mipmap.hideoussupersaiyansupersaiyanbroly_art,R.mipmap.hideoussupersaiyansupersaiyanbroly_icon,"Hideous Super Saiyan Super Saiyan Broly","STR Ki +3 & HP, ATK, & DEF +70%","Eraser Cannon","Causes supreme damage to enemy","Solid Terror", "When performing a Super Attack, ATK +60000 but DEF -18000, and launch an additional Super ATK", 13931,15318, 9050,50);
+
+    private static Card c48 = new Card(R.mipmap.countdowntodespairmajinbuuultimategohan_art,R.mipmap.countdowntodespairmajinbuuultimategohan_icon,"Countdown to Despair Majin Buu (Ultimate Gohan)","INT Type Ki +3, HP, ATK, & DEF +70%","Super Kamehameha (SA Level 1) Vice Shout (SA Level 5) Super Ghost Kamehameha Attack (30% chance at SA Level 10)", "Causes immense damage to enemy | Causes immense damage to enemy and lowers ATK and DEF | Greatly raises ATK, causes immense damage to enemy and greatly lowers ATK and DEF", "Winning is Everything","For every Ki sphere obtained, ATK +12% and recover 3000 HP",15017,14181,8999,48);
+
+    private static Card c49 = new Card(R.mipmap.eternalhorrorlegendarysupersaiyanbroly_art,R.mipmap.eternalhorrorlegendarysupersaiyanbroly_icon,"Eternal Horror Legendary Super Saiyan Broly","PHY Ki +3, HP, ATK & DEF +70%", "Omega Blaster","Causes supreme damage to enemy","No Mercy","ATK +7000 & launch an additional Super ATK when Ki is 8 or more",15750,14500,7925,48);
+
+    private static Card c50 = new Card(R.mipmap.wrathoftheabsolutegodfusionzamasu_art,R.mipmap.wrathoftheabsolutegodfusionzamasu_icon,"Wrath of the Absolute God Fusion Zamasu","Extreme Type Ki +1 & HP, ATK, & DEF +70%","True Test of a God","Causes immense damage to enemy and greatly lowers DEF","Discord of Gods & Men","ATK +120%; ATK -10% for Super Type allies",13918,15094,9083,48);
+
+    private static Card c51 = new Card(R.mipmap.startling_super_warrior_super_saiyan_trunks_teen_art,R.mipmap.startling_super_warrior_super_saiyan_trunks_teen_icon,"Startling Super Warrior Super Saiyan Trunks (Teen)","PHY Type Ki +3 and HP, ATK & DEF +70%","Burning Attack", "Causes supreme damage to enemy and raises DEF by 30% for 3 turns","Mark of a Super Saiyan","ATK +100%; medium chance to perform a critical hit",13588,14663,9741,50);
+
+    private static Card c52 = new Card(R.mipmap.thehopeoftheuniversegoku_art,R.mipmap.thehopeoftheuniversegoku_icon,"The Hope of the Universe Goku","AGL and STR Type Ki +3 and HP, ATK & DEF +30%","Super Spirit Bomb","Causes supreme damage to enemy, ATK +20% for all allies for 1 turn","Energy From All Earthlings","ATK +20% per STR Ki Sphere obtained, recover HP with candy",15756,13205,9001,42);
+
+    private static Card c53 = new Card( R.mipmap.agentofdestructionsynshenron_art,R.mipmap.agentofdestructionsynshenron_icon,"Agent of Destruction Syn Shenron", "PHY Type ATK and DEF +60%","Dark Dragon-Slaying Bullet","Causes supreme damage to enemy and greatly lowers DEF","Rampant Bloodlust","ATK +80%; all enemies' DEF -30%",13695,12934,11300,42);
+
+    private static Card c54 = new Card(R.mipmap.fireofvengeancegoldenfrieza_art,R.mipmap.fireofvengeancegoldenfrieza_icon,"Fire of Vengeance Golden Frieza","TEQ Type HP, ATK and DEF +100%","Earth Breaker","Causes immense damage to enemy and greatly lowers DEF","Moment of Counterattack","Damage received -70% & ATK +70% when HP is 50% or above",13950,14380,9475,48);
+
     public static final Card[] cardDatabase = {
             c1,
             c2,
@@ -131,7 +159,21 @@ public class CardInfoDatabase {
             c37,
             c38,
             c39,
-            c40
+            c40,
+            c41,
+            c42,
+            c43,
+            c44,
+            c45,
+            c46,
+            c47,
+            c48,
+            c49,
+            c50,
+            c51,
+            c52,
+            c53,
+            c54
     };
 
     // 120% Lead & Category Lead Arrays
@@ -154,201 +196,4 @@ public class CardInfoDatabase {
 
     public static Card[] NCards = {};
 
-    // Card Art References
-    public static final Integer[] cardArts = {
-            R.mipmap.darkintentionsmaskedsaiyan_art,
-            R.mipmap.grimreaperofdeathsrampagesupersaiyan3gotenks_art,
-            R.mipmap.welcometohellperfectcell_art,
-            R.mipmap.bladeofhopeanddreamssupersaiyantrunksfuture_art,
-            R.mipmap.fullpowersalutationaralenorimaki_art,
-            R.mipmap.passionofthewarriorracesupersaiyangodssvegeta_art,
-            R.mipmap.hideoussupersaiyansupersaiyanbroly_art,
-            R.mipmap.countdowntodespairmajinbuuultimategohan_art,
-            R.mipmap.eternalhorrorlegendarysupersaiyanbroly_art,
-            R.mipmap.wrathoftheabsolutegodfusionzamasu_art,
-            R.mipmap.startling_super_warrior_super_saiyan_trunks_teen_art,
-            R.mipmap.thehopeoftheuniversegoku_art,
-            R.mipmap.agentofdestructionsynshenron_art,
-            R.mipmap.fireofvengeancegoldenfrieza_art
-    };
-
-    // Card Description And Name References
-    public static final String[] cardNameAndDescription = {
-            "Dark Intentions Masked Saiyan",
-            "Grim Reaper of Death's Rampage Super Saiyan 3 Gotenks",
-            "Welcome to Hell Perfect Cell",
-            "Blade of Hope and Dreams Super Saiyan Trunks (Future)",
-            "Full-Power Salutation Arale Norimaki",
-            "Passion of the Warrior Race Super Saiyan God SS Vegeta",
-            "Hideous Super Saiyan Super Saiyan Broly",
-            "Countdown to Despair Majin Buu (Ultimate Gohan)",
-            "Eternal Horror Legendary Super Saiyan Broly",
-            "Wrath of the Absolute God Fusion Zamasu",
-            "Startling Super Warrior Super Saiyan Trunks (Teen)",
-            "The Hope of the Universe Goku",
-            "Agent of Destruction Syn Shenron",
-            "Fire of Vengeance Golden Frieza"
-    };
-
-    // Leader Skill References
-    public static final String[] leaderSkills = {
-            "All Types Ki +3 and HP, ATK & DEF +50%",
-            "TEQ Ki +3 & HP, ATK, & DEF +70%",
-            "STR Type HP, ATK & DEF +100%",
-            "Super Type Ki +1, HP, ATK & DEF +70%",
-            "All Types Ki +3 and HP, ATK & DEF +30%",
-            "INT Type HP, ATK & DEF +100%",
-            "STR Ki +3 & HP, ATK, & DEF +70%",
-            "INT Type Ki +3, HP, ATK, & DEF +70%",
-            "PHY Ki +3, HP, ATK & DEF +70%",
-            "Extreme Type Ki +1 & HP, ATK, & DEF +70%",
-            "PHY Type Ki +3 and HP, ATK & DEF +70%",
-            "AGL and STR Type Ki +3 and HP, ATK & DEF +30%",
-            "PHY Type ATK and DEF +60%",
-            "TEQ Type HP, ATK and DEF +100%"
-    };
-
-    // Super Attack Name References
-    public static final String[] superAttacksName = {
-            "Shadowy Strength",
-            "Super Ghost Kamikaze Attack (9 & 10 Ki) Charging Ultra Buu Buu Volleyball Attack (11 Ki) Super Ghost Kamikaze Attack (12 Ki)",
-            "Solar Kamehameha (at 10 or 12 Ki) Self-Destruct (at 11 Ki)",
-            "Final Hope Slash",
-            "N'cha Cannon | N'cha Cannon x100 (30% chance)",
-            "Pride of Our Warrior Race",
-            "Eraser Cannon",
-            "Super Kamehameha (SA Level 1) Vice Shout (SA Level 5) Super Ghost Kamehameha Attack (30% chance at SA Level 10)",
-            "Omega Blaster",
-            "True Test of a God",
-            "Burning Attack",
-            "Super Spirit Bomb",
-            "Dark Dragon-Slaying Bullet",
-            "Earth Breaker"
-    };
-
-    // Super Attack Description References
-    public static final String[] superAttacksDesc = {
-            "Causes immense damage to enemy and lowers ATK & DEF",
-            "Causes immense damage to enemy Massively raises ATK for 1 turn and causes immense damage to enemy Causes extreme damage to enemy and greatly lowers DEF",
-            "Causes immense damage to enemy and raises ATK & DEF Causes mass damage to all enemies and raises ATK & DEF",
-            "Causes immense damage to enemy and greatly lowers DEF",
-            "Causes immense damage to enemy Massively raises ATK for 1 turn Causes immense damage to enemy",
-            "Causes immense damage and raises ATK for 3 turns",
-            "Causes supreme damage to enemy",
-            "Causes immense damage to enemy | Causes immense damage to enemy and lowers ATK and DEF | Greatly raises ATK, causes immense damage to enemy and greatly lowers ATK and DEF",
-            "Causes supreme damage to enemy",
-            "Causes immense damage to enemy and greatly lowers DEF",
-            "Causes supreme damage to enemy and raises DEF by 30% for 3 turns",
-            "Causes supreme damage to enemy, ATK +20% for all allies for 1 turn",
-            "Causes supreme damage to enemy and greatly lowers DEF",
-            "Causes immense damage to enemy and greatly lowers DEF"
-    };
-
-    // Passive Skill Name References
-    public static final String[] passiveSkillsName = {
-            "Shadowy Strength",
-            "Furious Fighting Spirit",
-            "End of the Game",
-            "Light of Miracles",
-            "N'cha!",
-            "Princely Pressure",
-            "Solid Terror",
-            "Winning is Everything",
-            "No Mercy",
-            "Discord of Gods & Men",
-            "Mark of a Super Saiyan",
-            "Energy From All Earthlings",
-            "Rampant Bloodlust",
-            "Moment of Counterattack"
-    };
-
-    // Passive Skill Description References
-    public static final String[] passiveSkillsDesc = {
-            "ATK +50000 and DEF +20000 when facing 2 or less enemies",
-            "ATK +120% when performing super attack",
-            "ATK +100% at start of turn",
-            "Change STR orbs to INT orbs; ATK +15% per INT orb obtained",
-            "ATK +120% when performing a Super Attack",
-            "ATK +100%; Extreme Type enemies ATK & DEF -20%",
-            "When performing a Super Attack, ATK +60000 but DEF -18000, and launch an additional Super ATK",
-            "For every Ki sphere obtained, ATK +12% and recover 3000 HP",
-            "ATK +7000 & launch an additional Super ATK when Ki is 8 or more",
-            "ATK +120%; ATK -10% for Super Type allies",
-            "ATK +100%; medium chance to perform a critical hit",
-            "ATK +20% per STR Ki Sphere obtained, recover HP with candy",
-            "ATK +80%; all enemies' DEF -30%",
-            "Damage received -70% & ATK +70% when HP is 50% or above"
-    };
-
-    // Holds each card's hp stats
-    public static final Integer[] hp = {
-            14695, // UR (TEQ) MASKED SAIYAN
-            14012, // UR (TEQ) SSJ3 GOTENKS
-            14524, // UR (STR) PERFECT CELL
-            14524, // UR (INT) SSJ TRUNKS(FUTURE)(RAGE)
-            14818,
-            14212,
-            13931,
-            15017,
-            15750,
-            13918,
-            13588,
-            15756,
-            13695,
-            13950
-    };
-
-    // Holds each card's att stats
-    public static final Integer[] att = {
-            14948, // UR (TEQ) MASKED SAIYAN
-            14757, // UR (TEQ) SSJ3 GOTENKS
-            14226, // UR (STR) PERFECT CELL
-            14074, // UR (INT) SSJ TRUNKS(FUTURE)(RAGE)
-            13150,
-            14351,
-            15318,
-            14181,
-            14500,
-            15094,
-            14663,
-            13205,
-            12934,
-            14380
-    };
-
-    // Holds each card's def stats
-    public static final Integer[] def = {
-            9143, // UR (TEQ) MASKED SAIYAN
-            9906, // UR (TEQ) SSJ3 GOTENKS
-            9664, // UR (STR) PERFECT CELL
-            9754, // UR (INT) SSJ TRUNKS (FUTURE)(RAGE)
-            10375,
-            9752,
-            9050,
-            8999,
-            7925,
-            9083,
-            9741,
-            9001,
-            11300,
-            9475
-    };
-
-    // Holds each card's cost value
-    public static final Integer[] cost = {
-            42,
-            48,
-            48,
-            48,
-            48,
-            48,
-            50,
-            48,
-            48,
-            48,
-            50,
-            42,
-            42,
-            48
-    };
 }
