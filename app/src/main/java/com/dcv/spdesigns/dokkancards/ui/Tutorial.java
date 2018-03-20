@@ -11,14 +11,6 @@ import agency.tango.materialintroscreen.SlideFragmentBuilder;
  */
 public class Tutorial extends MaterialIntroActivity {
 
-//    private int color(@ColorRes int color) {
-//        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-//            return getResources().getColor(color,getTheme());
-//        } else {
-//            return getResources().getColor(color);
-//        }
-//    }
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

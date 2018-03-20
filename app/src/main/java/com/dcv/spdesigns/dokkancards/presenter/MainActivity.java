@@ -1,6 +1,7 @@
 package com.dcv.spdesigns.dokkancards.presenter;
 
 import android.annotation.SuppressLint;
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.drawable.ColorDrawable;
@@ -27,6 +28,7 @@ import com.dcv.spdesigns.dokkancards.model.glb.GlobalDataHolder;
 import com.dcv.spdesigns.dokkancards.model.glb.SerializeGLBData;
 import com.dcv.spdesigns.dokkancards.model.jp.JPDataHolder;
 import com.dcv.spdesigns.dokkancards.model.jp.SerializeJPData;
+import com.dcv.spdesigns.dokkancards.model.main.Card;
 import com.dcv.spdesigns.dokkancards.ui.MainScreenFragment;
 import com.dcv.spdesigns.dokkancards.ui.SortingDialog;
 import com.dcv.spdesigns.dokkancards.ui.Tutorial;
@@ -38,6 +40,10 @@ import java.util.List;
 
 import de.cketti.library.changelog.ChangeLog;
 
+/**
+ * The main Activity class that handles most of the app's code!
+ * Definitely the most important .java file in this project LOL.
+ */
 public class MainActivity extends AppCompatActivity {
 
     // NavMenu member vars
@@ -54,8 +60,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         checkForFirstRun();
-        callReadDataMethodsGLB();
-        callReadDataMethodsJP();
+        callReadDataMethodsGLB(this);
+        callReadDataMethodsJP(this);
+        initRarityListsGLB();
+        initRarityListsJP();
 
         // Show the changelog dialog
         ChangeLog cl = new ChangeLog(this);
@@ -116,7 +124,7 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.nav_home:
                         changeActionBarColor(1);
                         MainScreenFragment mainScreenFragment = new MainScreenFragment();
-                        fragmentTransaction.replace(R.id.FrameLayoutContainer,mainScreenFragment);
+                        fragmentTransaction.replace(R.id.FrameLayoutContainer,mainScreenFragment,"MainFragment");
                         fragmentTransaction.commit();
                         break;
                     case R.id.nav_UserBoxGLB:
@@ -243,17 +251,17 @@ public class MainActivity extends AppCompatActivity {
     /**
      * Calls every available Read method to retrieve all available data from the GLB database
      */
-    private void callReadDataMethodsGLB() {
-        GlobalDataHolder.cards = SerializeGLBData.ReadCards(this);
-        Log.d("Read Methods[GLB]", "ReadMethods called!");
+    public static void callReadDataMethodsGLB(Context context) {
+        GlobalDataHolder.cards = SerializeGLBData.ReadCards(context);
+        Log.i("Read Methods[GLB]", "ReadMethods called!");
     }
 
     /**
      * Calls every available Read method to retrieve all available data from the JP database
      */
-    private void callReadDataMethodsJP() {
-        JPDataHolder.cards = SerializeJPData.ReadCards(this);
-        Log.d("Read Methods[JP]", "ReadMethods called!");
+    public static void callReadDataMethodsJP(Context context) {
+        JPDataHolder.cards = SerializeJPData.ReadCards(context);
+        Log.i("Read Methods[JP]", "ReadMethods called!");
     }
 
     private void checkForFirstRun() {
@@ -275,13 +283,13 @@ public class MainActivity extends AppCompatActivity {
             Log.d("RUN_TYPE:" , "Normal Run");
             return;
         } else if(savedVersionCode == DOESNT_EXIST) { // This is a new install(or the user cleared the shared prefs)
-            CallWriteDataMethods();
+            CallWriteDataMethods(this);
             Log.d("RUN_TYPE:", "New Install");
             // Showing the disclaimer dialog when the app starts for the first time
             Intent tutorialIntent = new Intent(this, Tutorial.class);
             startActivity(tutorialIntent);
         } else if(currentVersionCode > savedVersionCode) { // This is an upgrade
-            CallWriteDataMethods();
+            CallWriteDataMethods(this);
             Log.d("RUN_TYPE:","Update");
         }
 
@@ -290,11 +298,11 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    private void CallWriteDataMethods() {
+    public static void CallWriteDataMethods(Context context) {
         // Write all the -empty- data from GlobalDataHolder to the internal memory to avoid a first time read error
-        SerializeGLBData.Write(GlobalDataHolder.cards,this);
+        SerializeGLBData.Write(GlobalDataHolder.cards,context);
         // Write all the -empty- data from JPDataHolder to the internal memory to avoid a first time read error
-        SerializeJPData.Write(JPDataHolder.cards,this);
+        SerializeJPData.Write(JPDataHolder.cards,context);
     }
 
     /**
@@ -315,6 +323,40 @@ public class MainActivity extends AppCompatActivity {
                 //noinspection ConstantConditions
                 getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(R.color.colorPrimaryJP)));
                 break;
+        }
+    }
+
+    /**
+     * Initializes the various rarity related
+     * lists for the GLB Fragment dynamically.
+     */
+    public static void initRarityListsGLB() {
+        for (int i=0;i<GlobalDataHolder.cards.size();i++) {
+            if(GlobalDataHolder.cards.get(i).getRarity().equals("LR")) {
+                GlobalDataHolder.LRCards.add(GlobalDataHolder.cards.get(i));
+            }
+        }
+        for (int i=0;i<GlobalDataHolder.cards.size();i++) {
+            if(GlobalDataHolder.cards.get(i).getRarity().equals("UR")) {
+                GlobalDataHolder.URCards.add(GlobalDataHolder.cards.get(i));
+            }
+        }
+    }
+
+    /**
+     * Initializes the various rarity related
+     * lists for the JP Fragment dynamically.
+     */
+    public static void initRarityListsJP() {
+        for (int i=0;i<JPDataHolder.cards.size();i++) {
+            if(JPDataHolder.cards.get(i).getRarity().equals("LR")) {
+                JPDataHolder.LRCards.add(JPDataHolder.cards.get(i));
+            }
+        }
+        for (int i=0;i<JPDataHolder.cards.size();i++) {
+            if(JPDataHolder.cards.get(i).getRarity().equals("UR")) {
+                JPDataHolder.URCards.add(JPDataHolder.cards.get(i));
+            }
         }
     }
 }

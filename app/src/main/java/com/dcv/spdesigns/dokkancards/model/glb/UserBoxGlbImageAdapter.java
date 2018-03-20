@@ -20,21 +20,18 @@ public class UserBoxGlbImageAdapter extends BaseAdapter {
 
     private final Context mContext;
 
-    private static ArrayList<Integer> mGLBIcons = new ArrayList<>();
-
     public UserBoxGlbImageAdapter(Context c) {
         mContext = c;
-        setImageIconsGLB();
     }
 
     @Override
     public int getCount() {
-        return mGLBIcons.size();
+        return GlobalDataHolder.cards.size();
     }
 
     @Override
     public Object getItem(int i) {
-        return mGLBIcons.get(i);
+        return GlobalDataHolder.cards.get(i);
     }
 
     @Override
@@ -54,18 +51,8 @@ public class UserBoxGlbImageAdapter extends BaseAdapter {
         } else {
             imageView = (ImageView) convertView;
         }
-        imageView.setImageResource(mGLBIcons.get(position));
+        imageView.setImageResource(GlobalDataHolder.cards.get(position).getCardIcon());
         return imageView;
-    }
-
-    /**
-     * Initializes the cardIcons array with each card's icon from the global database
-     * @return Returns an ArrayList of Integers
-     */
-    private void setImageIconsGLB() {
-        for (int i = 0; i < GlobalDataHolder.cards.size(); i++) {
-            mGLBIcons.add(GlobalDataHolder.cards.get(i).getCardIcon());
-        }
     }
 
     /**

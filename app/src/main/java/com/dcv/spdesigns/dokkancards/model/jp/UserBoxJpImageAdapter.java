@@ -12,31 +12,26 @@ import com.dcv.spdesigns.dokkancards.model.glb.GlobalDataHolder;
 import java.util.ArrayList;
 
 /**
- * DokkanCards was
- * Created by Stelios Papamichail on 11/29/2017.
- * <p>
- * This file belongs to the com.dcv.spdesigns.dokkancards.model.jp package.
+ * This class is used to initialize the UserBoxJPFragment's grid
+ * with imageViews using the data from the JPDataHolder.java class
  */
 
 public class UserBoxJpImageAdapter extends BaseAdapter {
 
     private final Context mContext;
-    private ArrayList<Integer> mJPIcons = new ArrayList<>();
-
 
     public UserBoxJpImageAdapter(Context c) {
         mContext = c;
-        setImageIconsJP();
     }
 
     @Override
     public int getCount() {
-        return mJPIcons.size();
+        return JPDataHolder.cards.size();
     }
 
     @Override
     public Object getItem(int i) {
-        return mJPIcons.get(i);
+        return JPDataHolder.cards.get(i);
     }
 
     @Override
@@ -56,18 +51,8 @@ public class UserBoxJpImageAdapter extends BaseAdapter {
         } else {
             imageView = (ImageView) convertView;
         }
-        imageView.setImageResource(mJPIcons.get(position));
+        imageView.setImageResource(JPDataHolder.cards.get(position).getCardIcon());
         return imageView;
-    }
-
-    /**
-     * Initializes the cardIcons array with each card's icon from the global database
-     * @return Returns an ArrayList of Integers
-     */
-    private void setImageIconsJP() {
-        for (int i = 0; i < JPDataHolder.cards.size(); i++) {
-            mJPIcons.add(JPDataHolder.cards.get(i).getCardIcon());
-        }
     }
 
     /**

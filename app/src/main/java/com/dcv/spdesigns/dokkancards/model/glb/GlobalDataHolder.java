@@ -9,6 +9,9 @@ import java.util.ArrayList;
  */
 public class GlobalDataHolder {
 
-    public static ArrayList<Card> cards = new ArrayList<>(); // icons
+    public static ArrayList<Card> cards = new ArrayList<>();
 
+    public static ArrayList<Card> LRCards = new ArrayList<>();
+
+    public static ArrayList<Card> URCards = new ArrayList<>();
 }

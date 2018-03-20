@@ -15,10 +15,8 @@ import mehdi.sakout.aboutpage.Element;
 import com.google.android.gms.oss.licenses.OssLicensesMenuActivity;
 
 /**
- * DokkanCards was
- * Created by Stelios Papamichail on 11/25/2017.
- * <p>
- * This file belongs to the com.dcv.spdesigns.dokkancards.ui package.
+ * An Activity class that uses a Third Party Library to create
+ * the app's "About Page".
  */
 
 public class AboutPageActivity extends AppCompatActivity {
@@ -60,7 +58,7 @@ public class AboutPageActivity extends AppCompatActivity {
         Contributors.setIntent(contributorsIntent);
 
         Element version = new Element();
-        version.setTitle("Version 0.7.2");
+        version.setTitle("Version 0.8");
 
         Element Licenses = new Element();
         Licenses.setTitle("Open Source Licenses");

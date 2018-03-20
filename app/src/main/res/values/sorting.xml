@@ -2,6 +2,7 @@
 <resources>
     <string-array name="sorting_options">
         <item>Default [Max Lvl,Max Orbs]</item>
-        <item>Alphabetically</item>
+        <item>LR Cards</item>
+        <item>UR Cards</item>
     </string-array>
 </resources>

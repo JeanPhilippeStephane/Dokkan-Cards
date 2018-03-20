@@ -11,6 +11,9 @@ import com.dcv.spdesigns.dokkancards.R;
 
 import agency.tango.materialintroscreen.SlideFragment;
 
+/**
+ * The tutorial Fragment which uses a Third Party Library.
+ */
 public class TutorialDisclaimerSlide extends SlideFragment {
 
     private CheckBox checkBox;

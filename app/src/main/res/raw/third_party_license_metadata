@@ -5,28 +5,36 @@
 182:46 support-v4
 230:46 appcompat-v7
 278:46 support-fragment
-326:46 support-core-utils
-374:46 ckchangelog
-422:46 recyclerview-v7
-470:46 transition
-518:1558 RE2
-2078:1732 Protobuf Nano
-3812:1481 darts_clone
-5295:3182 PCRE
-8479:2500 zlib
-10981:11358 CCTZ
-22341:19442 ICU4C
-41785:243 tz database
-42030:1602 JSR 305
-43634:731 UTF
-44367:680 STL
-45049:11358 safeparcel
-56409:11342 flatbuffers
-67753:46 animated-vector-drawable
-67801:46 support-vector-drawable
-67849:46 support-core-ui
-67897:46 support-media-compat
-67945:46 support-compat
-67993:46 support-annotations
-68041:46 runtime
-68137:46 common
+326:46 animated-vector-drawable
+374:46 recyclerview-v7
+422:46 support-core-ui
+470:46 support-core-utils
+518:46 ckchangelog
+566:49 sdp-android
+617:49 ssp-android
+668:46 transition
+716:1558 RE2
+2276:1732 Protobuf Nano
+4010:1481 darts_clone
+5493:3182 PCRE
+8677:2500 zlib
+11179:11358 CCTZ
+22539:19442 ICU4C
+41983:243 tz database
+42228:1602 JSR 305
+43832:731 UTF
+44565:680 STL
+45247:11358 safeparcel
+56607:11342 flatbuffers
+67951:46 support-vector-drawable
+67999:46 support-media-compat
+68047:46 support-compat
+68095:46 support-annotations
+68287:46 runtime
+68191:46 livedata-core
+68335:46 common
+68383:46 viewmodel
+68431:46 butterknife-compiler
+68479:46 butterknife-annotations
+68527:46 javapoet
+68575:46 butterknife
