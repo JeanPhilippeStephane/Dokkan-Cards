@@ -3,7 +3,7 @@ package com.dcv.spdesigns.dokkancards.model.main;
 import java.util.List;
 
 /**
- * A card object
+ * An object class containing every field necessary to create an in-game card object.
  */
 
 public class Card {
@@ -16,13 +16,15 @@ public class Card {
     private String mSuperAttackDesc;
     private String mPassiveSkillName;
     private String mPassiveSkillDesc;
+    private String mType;
+    private String mRarity;
     private int hp;
     private int att;
     private int def;
     private int cost;
     private List<String> mLinkSkills;
 
-    public Card(Integer mCardArt, Integer mCardIcon, String mNameDescription, String mLeaderSkill, String mSuperAttackName, String mSuperAttackDesc, String mPassiveSkillName, String mPassiveSkillDesc, int hp, int att, int def, int cost) {
+    public Card(Integer mCardArt, Integer mCardIcon, String mNameDescription, String mLeaderSkill, String mSuperAttackName, String mSuperAttackDesc, String mPassiveSkillName, String mPassiveSkillDesc, int hp, int att, int def, int cost,String rarity,String type) {
         this.mCardArt = mCardArt;
         this.mCardIcon = mCardIcon;
         this.mNameDescription = mNameDescription;
@@ -31,11 +33,29 @@ public class Card {
         this.mSuperAttackDesc = mSuperAttackDesc;
         this.mPassiveSkillName = mPassiveSkillName;
         this.mPassiveSkillDesc = mPassiveSkillDesc;
+        mType = type;
+        mRarity = rarity;
         this.hp = hp;
         this.att = att;
         this.def = def;
         this.cost = cost;
         this.mLinkSkills = mLinkSkills;
+    }
+
+    public String getType() {
+        return mType;
+    }
+
+    public void setType(String type) {
+        mType = type;
+    }
+
+    public String getRarity() {
+        return mRarity;
+    }
+
+    public void setRarity(String rarity) {
+        mRarity = rarity;
     }
 
     public Integer getCardArt() {

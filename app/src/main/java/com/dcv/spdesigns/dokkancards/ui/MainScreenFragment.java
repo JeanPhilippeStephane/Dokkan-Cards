@@ -7,13 +7,16 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.ContextMenu;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Adapter;
 import android.widget.AdapterView;
 import android.widget.GridView;
+import android.widget.ListAdapter;
 
 import com.dcv.spdesigns.dokkancards.presenter.CardViewActivity;
 import com.dcv.spdesigns.dokkancards.R;
@@ -21,14 +24,29 @@ import com.dcv.spdesigns.dokkancards.model.main.CardInfoDatabase;
 import com.dcv.spdesigns.dokkancards.model.glb.GlobalDataHolder;
 import com.dcv.spdesigns.dokkancards.model.main.ImageAdapter;
 import com.dcv.spdesigns.dokkancards.model.jp.JPDataHolder;
+import com.dcv.spdesigns.dokkancards.presenter.MainActivity;
 
+/**
+ * This Fragment displays the app's Card Database to the user and allows him/her
+ * to add cards to either one of his/her boxes and also view the selected card's details.
+ */
 public class MainScreenFragment extends Fragment {
 
     // Main Grid View
-    private GridView gridView;
+    private static GridView gridView;
+
+    private static int filterDialogOptionSelected = 0; // holds the current filter option selected by the user
 
     public MainScreenFragment() {
         // Required empty public constructor
+    }
+
+    public static int getFilterDialogOptionSelected() {
+        return filterDialogOptionSelected;
+    }
+
+    public static void setFilterDialogOptionSelected(int filterDialogOptionSelected) {
+        MainScreenFragment.filterDialogOptionSelected = filterDialogOptionSelected;
     }
 
     @Override
@@ -39,7 +57,7 @@ public class MainScreenFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_main_screen, container, false);
 
         gridView = view.findViewById(R.id.gridViewLayout);
-        gridView.setAdapter(new ImageAdapter(getContext())); // used to set the contents of the GridView-in this case images-
+        setMainGridImageAdapter(new ImageAdapter(getContext())); // used to set the contents of the GridView-in this case images-
         registerForContextMenu(gridView);
 
         // When an item from the GridView gets clicked
@@ -50,6 +68,7 @@ public class MainScreenFragment extends Fragment {
                 Intent intent = new Intent(getContext(),CardViewActivity.class);
                 intent.putExtra("Card Index",position);
                 intent.putExtra("Identifier", 0);
+                intent.putExtra("filterOption",filterDialogOptionSelected);
                 startActivity(intent);
             }
         });
@@ -112,6 +131,7 @@ public class MainScreenFragment extends Fragment {
      * which icon from the DataBase was selected
      */
     private void addSelectedCardToGlobalUserBox(int position) {
+        //Log.i("Position:", position +"");
         GlobalDataHolder.cards.add(CardInfoDatabase.cardDatabase[position]);
     }
 
@@ -123,6 +143,15 @@ public class MainScreenFragment extends Fragment {
      */
     private void addSelectedCardToJPUserBox(int position) {
         JPDataHolder.cards.add(CardInfoDatabase.cardDatabase[position]);
+    }
+
+    /**
+     * This method sets the main Grid's image adapter based on the selected
+     * filter dialog option. Check the SortingDialog.java class for more info.
+     * @param adapter The adapter which will be set as the main adapter for the grid.
+     */
+    public static void setMainGridImageAdapter(ListAdapter adapter) {
+        gridView.setAdapter(adapter);
     }
 
 }

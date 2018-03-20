@@ -16,6 +16,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.GridView;
+import android.widget.ListAdapter;
 
 import com.dcv.spdesigns.dokkancards.presenter.CardViewActivity;
 import com.dcv.spdesigns.dokkancards.R;
@@ -24,10 +25,14 @@ import com.dcv.spdesigns.dokkancards.model.jp.UserBoxJpImageAdapter;
 
 import java.util.ArrayList;
 
+/**
+ * The Fragment that displays the user's cards that were added
+ * to the JP User Box and handles various actions like card removal, card details etc.
+ */
 public class UserBoxJPFragment extends Fragment {
 
-    private GridView jpGridView;
-    private UserBoxJpImageAdapter adapter;
+    private static GridView jpGridView;
+    private static int filterOptionSelectedJP = 0;
 
     public UserBoxJPFragment() {
         // Required empty public constructor
@@ -44,10 +49,10 @@ public class UserBoxJPFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        adapter = new UserBoxJpImageAdapter(this.getContext());
+        UserBoxJpImageAdapter adapter = new UserBoxJpImageAdapter(this.getContext());
 
         jpGridView = view.findViewById(R.id.userBoxJPGridView);
-        jpGridView.setAdapter(adapter);
+        setJPFragmentAdapter(adapter);
         registerForContextMenu(jpGridView);
 
         // When an item from the GridView gets clicked
@@ -57,6 +62,7 @@ public class UserBoxJPFragment extends Fragment {
                 Intent cardViewIntent = new Intent(getContext(), CardViewActivity.class);
                 cardViewIntent.putExtra("Card Index",position);
                 cardViewIntent.putExtra("Identifier", 2);
+                cardViewIntent.putExtra("filterOptionJP",getFilterOptionSelectedJP());
                 startActivity(cardViewIntent);
             }
         });
@@ -80,6 +86,7 @@ public class UserBoxJPFragment extends Fragment {
         if(item.getTitle().equals("Remove card")) {
             removeCardMessage();
             removeCardFromJPBox(position);
+            callRefreshFragmentView(jpGridView.getAdapter());
         } else {
             return false;
         }
@@ -102,8 +109,48 @@ public class UserBoxJPFragment extends Fragment {
         snackbar.show();
     }
 
+    /**
+     * Refreshes the grid's image adapter in order to make any changes
+     * viewable immediately.
+     * @param adapter The adapter whose data is refreshed.
+     */
+    private void callRefreshFragmentView(ListAdapter adapter) {
+        UserBoxJpImageAdapter.refreshFragmentView((UserBoxJpImageAdapter) adapter);
+    }
+
     private void removeCardFromJPBox(int position) {
+        if(JPDataHolder.cards.get(position).getRarity().equals("LR")) {
+            for(int i = 0; i < JPDataHolder.LRCards.size();i++) {
+                if(JPDataHolder.cards.get(position).getName().equals(JPDataHolder.LRCards.get(i).getName())) {
+                    JPDataHolder.LRCards.remove(i);
+                }
+            }
+        } else if(JPDataHolder.cards.get(position).getRarity().equals("UR")) {
+            for(int i = 0; i < JPDataHolder.URCards.size();i++) {
+                if(JPDataHolder.cards.get(position).getName().equals(JPDataHolder.URCards.get(i).getName())) {
+                    JPDataHolder.URCards.remove(i);
+                }
+            }
+        }
         JPDataHolder.cards.remove(position);
-        UserBoxJpImageAdapter.refreshFragmentView(adapter);
+    }
+
+    /**
+     * Sets this fragment's grid image adapter.
+     * This function is used by the SortingDialog class in order
+     * to change the grid's image adapter based on the filter option
+     * that the user has selected.
+     * @param adapter The adapter which is used by the grid.
+     */
+    public static void setJPFragmentAdapter(ListAdapter adapter) {
+        jpGridView.setAdapter(adapter);
+    }
+
+    public static int getFilterOptionSelectedJP() {
+        return filterOptionSelectedJP;
+    }
+
+    public static void setFilterOptionSelectedJP(int filterOptionJP) {
+        filterOptionSelectedJP = filterOptionJP;
     }
 }

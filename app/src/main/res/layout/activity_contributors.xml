@@ -93,12 +93,77 @@
                     android:textStyle="italic" />
 
                 <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="19dp"
+                    android:fontFamily="monospace"
+                    android:text="@string/Nathanael"
+                    android:textAlignment="textStart"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="19dp"
+                    android:fontFamily="monospace"
+                    android:text="@string/Boomzilla"
+                    android:textAlignment="textStart"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="19dp"
+                    android:fontFamily="monospace"
+                    android:text="@string/Darkrisin"
+                    android:textAlignment="textStart"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:textStyle="italic" />
+
+                <TextView
                     android:id="@+id/textView3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="19dp"
                     android:fontFamily="monospace"
                     android:text="@string/Kyle_Green"
+                    android:textAlignment="textStart"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="19dp"
+                    android:fontFamily="monospace"
+                    android:text="@string/Maxence_Payno"
+                    android:textAlignment="textStart"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="19dp"
+                    android:fontFamily="monospace"
+                    android:text="@string/Shane_Humpleby"
                     android:textAlignment="textStart"
                     android:textAllCaps="false"
                     android:textColor="@android:color/black"

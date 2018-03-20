@@ -18,6 +18,12 @@ import java.util.ArrayList;
  */
 public class SerializeJPData {
 
+    /**
+     * Writes the JP User Box's cardList to the user's internal storage using the Gson
+     * library so that the user doesn't lose his/her data.
+     * @param cardsList The list to write to the internal storage
+     * @param context Getting the app's current context
+     */
     public static void Write(ArrayList<Card> cardsList, Context context) {
 
         SharedPreferences appPrefs = PreferenceManager.getDefaultSharedPreferences(context);

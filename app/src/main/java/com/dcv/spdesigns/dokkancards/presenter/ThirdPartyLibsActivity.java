@@ -5,6 +5,10 @@ import android.os.Bundle;
 
 import com.dcv.spdesigns.dokkancards.R;
 
+/**
+ * A simple Activity class  that shows the "Third Party Libs" page layout
+ * in the app's "About Page".
+ */
 public class ThirdPartyLibsActivity extends AppCompatActivity {
 
     @Override

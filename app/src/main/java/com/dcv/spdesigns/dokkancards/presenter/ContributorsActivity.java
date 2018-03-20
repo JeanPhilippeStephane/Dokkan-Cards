@@ -5,6 +5,9 @@ import android.os.Bundle;
 
 import com.dcv.spdesigns.dokkancards.R;
 
+/**
+ * A simple Activity class that shows the Contributors Page layout.
+ */
 public class ContributorsActivity extends AppCompatActivity {
 
     @Override

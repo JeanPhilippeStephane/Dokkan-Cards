@@ -6,10 +6,8 @@ import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 
 /**
- * DokkanCards was
- * Created by Stelios Papamichail on 11/19/2017.
- * <p>
- * This file belongs to the com.dcv.spdesigns.dokkancards package.
+ * An Application class that sets the screen orientation to PORTRAIT
+ * across the whole app.
  */
 
 public class DokkanCardsApplication extends Application {

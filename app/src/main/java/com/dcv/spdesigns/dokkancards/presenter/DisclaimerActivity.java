@@ -5,6 +5,9 @@ import android.os.Bundle;
 
 import com.dcv.spdesigns.dokkancards.R;
 
+/**
+ * A simple Activity class that shows the layout for the Disclaimer Page in the app.
+ */
 public class DisclaimerActivity extends AppCompatActivity {
 
     @Override

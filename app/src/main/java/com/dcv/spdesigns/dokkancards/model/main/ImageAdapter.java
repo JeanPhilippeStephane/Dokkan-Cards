@@ -1,6 +1,7 @@
 package com.dcv.spdesigns.dokkancards.model.main;
 
 import android.content.Context;
+import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
@@ -12,10 +13,8 @@ import com.dcv.spdesigns.dokkancards.R;
 import java.util.ArrayList;
 
 /**
- * DokkanCards was
- * Created by Stelios Papamichail on 11/19/2017.
- * <p>
- * This file belongs to the com.dcv.spdesigns.dokkancards.model package.
+ * This adapter class populates the main Fragment's grid(the actual database)
+ * with every card icon.
  */
 
 public class ImageAdapter extends BaseAdapter {
@@ -23,12 +22,11 @@ public class ImageAdapter extends BaseAdapter {
 
     public ImageAdapter(Context c) {
         mContext = c;
-        setImageIcons();
     }
 
     @Override
     public int getCount() {
-        return cardIcons.size();
+        return CardInfoDatabase.cardDatabase.length;
     }
 
     @Override
@@ -54,21 +52,8 @@ public class ImageAdapter extends BaseAdapter {
         } else {
             imageView = (ImageView) convertView;
         }
-        imageView.setImageResource(cardIcons.get(position));
+        imageView.setImageResource(CardInfoDatabase.cardDatabase[position].getCardIcon());
         return imageView;
     }
-
-    // References to our images
-    public static ArrayList<Integer> cardIcons = new ArrayList<>();
-
-    /**
-     * Initializes the cardIcons array with each card's icon from the actual database
-     * @return Returns an ArrayList of Integers converted to an Array
-     */
-    private void setImageIcons() {
-
-        for (int i=0; i < CardInfoDatabase.cardDatabase.length;i++) {
-            cardIcons.add(CardInfoDatabase.cardDatabase[i].getCardIcon());
-        }
-    }
 }
+
