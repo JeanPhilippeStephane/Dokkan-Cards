@@ -146,6 +146,25 @@ public class CardInfoDatabase {
     private static Card c66 = new Card(R.mipmap.earths_final_trump_card_hercule_art,R.mipmap.earths_final_trump_card_hercule_icon,"Earth's Final Trump Card","All Types HP and DEF +77%","Present Bomb","Causes supreme damage with rare chance to stun the enemy","The Perfect Gift","High chance of ATK +15000 and Ki +6",13642,13121,10336,38,"UR","Super TEQ");
 
     private static Card c67 = new Card(R.mipmap.glorious_battle_super_saiyan_trunkskid_art,R.mipmap.glorious_battle_super_saiyan_trunkskid_icon,"Glorious Battle Super Saiyan Trunks (Kid)","PHY Type Ki +2 and HP & DEF +70%","Final Cannon","Causes supreme damage to enemy and raises ATK for 3 turns","Learning To Fight Back","ATK +100% when performing a Super Attack",15064,12654,9361,40,"UR","Super PHY");
+    private static Card c68= new Card(R.mipmap.returningfromtheotherworld_supersaiyangoku2_angel__art,R.mipmap.returningfromtheotherworld_supersaiyangoku2_angel__icon,"Returning from the otherworld Super Saiyan 2 Goku (Angel)","TEQ & PHY Type Ki +3 and HP & DEF +70%","Super Kamehameha","Causes supreme damage to enemy","For His Friends","Ki +5 and ATK +12000 as the 3rd attacker in a turn",13846,13733,9495,40,"UR","Super TEC");
+
+    private static Card c69= new Card(R.mipmap.recklessstrength_supersaiyangotenks_art,R.mipmap.recklessstrength_supersaiyangotenks_icon,"Reckless Strength Super Saiyan Gotenks","All Types Ki +3 and ATK & DEF +30%","Galactic Donut","Causes supreme damage to enemy and lowers DEF","Exultant Demeanor","ATK +15% per Ki Sphere obtained",13846,13371,9848,42,"UR","Super AGL ");
+
+    private  static Card c70= new Card(R.mipmap.wisewarrior_piccolo_art,R.mipmap.wisewarrior_piccolo_icon,"Wise Warrior Piccolo","INT Type Ki +2 and HP & DEF +70%","Special Beam Cannon (Clone)"," Causes supreme damage to enemy and greatly raises ATK for 1 turn ","All-Out Synergy","ATK & DEF +80% when HP is 80% or below",14481,12360,10220,42,"UR","Super INT");
+
+    private static Card c71=new Card(R.mipmap.furiouscharge_supersaiyanbardock_art,R.mipmap.furiouscharge_supersaiyanbardock_icon,"Furious Charge Super Saiyan Bardock","AGL & TEQ Type Ki +3 and HP & DEF +70%","Spirit of Saiyans ","Causes supreme damage and seals Super Attack","Swift Incisions","Change STR Ki Spheres to TEQ Ki Spheres; ATK +40%",13752,13696,9590,42,"UR","Super END");
+
+    private static Card c72=new Card(R.mipmap.beyonddestiny_karoly_art,R.mipmap.beyonddestiny_karoly_icon," Beyond Destiny Karoly","TEQ Type ATK & DEF +70%","Gigantic Spirit Bomb","Supreme damage, rare chance to stun the enemy","Courageous Soul","ATK +80% at start of turn",14356,13495,9163,40,"UR","Super TEC");
+
+    private static Card c73=new Card(R.mipmap.ruledbybloodlust_android_no_17_art,R.mipmap.ruledbybloodlust_android_no_17_icon,"Ruled by Bloodlust Android #17","AGL and INT Type Ki +3 and HP,ATK & DEF +30%","Power Blitz","Causes supreme damage to enemy and greatly lowers DEF","Signal of Fire Rebellion","AGL and INT Type Ki +2 and ATK & DEF +25%",1403,13158,9844,42,"UR","Extreme AGL");
+
+    private static Card c74=new Card(R.mipmap.inklingsofultimatepower_supersaiyan3goku_gt__goldengiantape__art,R.mipmap.inklingsofultimatepower_supersaiyan3goku_gt__goldengiantape__icon,"nklings of Ultimate Power Super Saiyan 3 Goku (GT) (Golden Giant Ape)","STR Type ATK +33% per STR Ki Sphere obtained","Super Kamehameha","Causes supreme damage to enemy and raises ATK for 3 turns","The Tail Returns","ATK +33% for all allies; may turn into Giant Ape",14320,13408,9277,42,"UR","Super PUI");
+
+    private static Card c75=new Card(R.mipmap.truevalueofthepotara_vegito_art,R.mipmap.truevalueofthepotara_vegito_icon,"True Value of the Potara Vegito","All Types HP and ATK +30%","Big Bang Attack","Causes supreme damage, allies' ATK +25% for 1 turn","Potara of Hope ","ATK and DEF +30% for all allies",13953,13315,9730,42,"UR","Super TEC");
+
+    private static Card c76=new Card(R.mipmap.goldenmalice_goldenfrieza_art,R.mipmap.goldenmalice_goldenfrieza_icon,"olden Malice Golden Frieza","TEQ, INT and STR Type HP & ATK +30%","Earth Breaker","Causes supreme damage to enemy ","Golden Evolution","ATK and DEF +60% at start of turn",14035,13132,9815,42,"UR","Extreme INT");
+
+    private static Card c77=new Card(R.mipmap.ingeniouscollaboration_androids_no_17_and_no_18_art,R.mipmap.ingeniouscollaboration_androids_no_17_and_no_18_icon,"ngenious Collaboration Androids #17 & #18","All Types Ki +3","Accel Dance","Causes supreme damage to enemy ","Brimming Confidence ","ATK +10000 when performing a Super Attack",13548,13023,10406,38,"UR","Extreme AGL");
 
     public static final Card[] cardDatabase = {
             c1,
@@ -214,7 +233,17 @@ public class CardInfoDatabase {
             c64,
             c65,
             c66,
-            c67
+            c67,
+            c68,
+            c69,
+            c70,
+            c71,
+            c72,
+            c73,
+            c74,
+            c75,
+            c76,
+            c77
     };
 
     // 120% Lead & Category Lead Arrays
@@ -232,7 +261,8 @@ public class CardInfoDatabase {
     public static Card[] URCards = {
             c11, c12, c13, c14, c15, c16, c17, c18, c19, c20, c21, c22, c23, c24,
             c25, c26, c27, c28, c29, c30, c31, c32, c33, c34, c35, c36, c37, c38, c39, c40, c41, c42, c43, c44,
-            c45, c46, c47, c48, c49, c50, c51, c52, c53, c54, c58, c59, c60, c61, c62, c63, c64, c65, c66, c67
+            c45, c46, c47, c48, c49, c50, c51, c52, c53, c54, c58, c59, c60, c61, c62, c63, c64, c65, c66, c67,
+            c68,c69, c70,c71,c72,c73,c74,c75,c76,c77
     };
 
     public static Card[] SSRCards = {};
