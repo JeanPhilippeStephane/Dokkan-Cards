@@ -146,6 +146,7 @@ public class CardInfoDatabase {
     private static Card c66 = new Card(R.mipmap.earths_final_trump_card_hercule_art,R.mipmap.earths_final_trump_card_hercule_icon,"Earth's Final Trump Card","All Types HP and DEF +77%","Present Bomb","Causes supreme damage with rare chance to stun the enemy","The Perfect Gift","High chance of ATK +15000 and Ki +6",13642,13121,10336,38,"UR","Super TEQ");
 
     private static Card c67 = new Card(R.mipmap.glorious_battle_super_saiyan_trunkskid_art,R.mipmap.glorious_battle_super_saiyan_trunkskid_icon,"Glorious Battle Super Saiyan Trunks (Kid)","PHY Type Ki +2 and HP & DEF +70%","Final Cannon","Causes supreme damage to enemy and raises ATK for 3 turns","Learning To Fight Back","ATK +100% when performing a Super Attack",15064,12654,9361,40,"UR","Super PHY");
+
     private static Card c68= new Card(R.mipmap.returningfromtheotherworld_supersaiyangoku2_angel__art,R.mipmap.returningfromtheotherworld_supersaiyangoku2_angel__icon,"Returning from the otherworld Super Saiyan 2 Goku (Angel)","TEQ & PHY Type Ki +3 and HP & DEF +70%","Super Kamehameha","Causes supreme damage to enemy","For His Friends","Ki +5 and ATK +12000 as the 3rd attacker in a turn",13846,13733,9495,40,"UR","Super TEC");
 
     private static Card c69= new Card(R.mipmap.recklessstrength_supersaiyangotenks_art,R.mipmap.recklessstrength_supersaiyangotenks_icon,"Reckless Strength Super Saiyan Gotenks","All Types Ki +3 and ATK & DEF +30%","Galactic Donut","Causes supreme damage to enemy and lowers DEF","Exultant Demeanor","ATK +15% per Ki Sphere obtained",13846,13371,9848,42,"UR","Super AGL ");
@@ -165,6 +166,29 @@ public class CardInfoDatabase {
     private static Card c76=new Card(R.mipmap.goldenmalice_goldenfrieza_art,R.mipmap.goldenmalice_goldenfrieza_icon,"olden Malice Golden Frieza","TEQ, INT and STR Type HP & ATK +30%","Earth Breaker","Causes supreme damage to enemy ","Golden Evolution","ATK and DEF +60% at start of turn",14035,13132,9815,42,"UR","Extreme INT");
 
     private static Card c77=new Card(R.mipmap.ingeniouscollaboration_androids_no_17_and_no_18_art,R.mipmap.ingeniouscollaboration_androids_no_17_and_no_18_icon,"ngenious Collaboration Androids #17 & #18","All Types Ki +3","Accel Dance","Causes supreme damage to enemy ","Brimming Confidence ","ATK +10000 when performing a Super Attack",13548,13023,10406,38,"UR","Extreme AGL");
+
+    private static Card c78=new Card(R.mipmap.impishinnocence_aralenorimaki_art,R.mipmap.impishinnocence_aralenorimaki_icon,"mpish Innocence Arale Norimaki","AGL Type ATK & DEF +60%","Kiiiiiiiiin!"," Supreme damage; rare chance to stun enemy","Totally Pumped!","ATK +90% when Ki is 7 or more",14172,12874,9931,40,"UR","Super TEC");
+
+    private static Card c79=new Card(R.mipmap.destructiondescending_buu_super__art,R.mipmap.destructiondescending_buu_super__icon,"Destruction Descending Buu (Super)","TEQ Type Ki +3 and ATK & DEF +50%","Assault Rain","Causes supreme damage with a rare chance to stun the enemy","Favorite Candy","Recovers 30% of damage dealt as health",13657,13847,9448,42,"UR","Extreme TEC");
+
+    private static Card c80=new Card(R.mipmap.outcomeofhardship_goku_youth__greatape__art,R.mipmap.outcomeofhardship_goku_youth__greatape__icon,"Outcome of Hardship Goku (Youth) (Giant Ape)","All Types HP, ATK and DEF +50%","Kamehameha","Causes supreme damage to enemy ","Hard-Won Perseverance","ATK +80% at start of turn; may turn into Giant Ape (up to 2 times)",14881,12838,9223,46,"UR","Super END");
+
+    private static Card c81=new Card(R.mipmap.timesguidance_supersaiyantrunks_xeno__art,R.mipmap.timesguidance_supersaiyantrunks_xeno__icon,"Time's Guidance Super Saiyan Trunks (Xeno","AGL Type Ki +2 and HP, ATK & DEF +40%","Burning Attack","Causes supreme damage to enemy and raises ATK for 6 turns","Righteous Indignation","Ki +2 and ATK +80% at start of turn",14264,13205,9471,42,"UR","Super AGL");
+
+    private static Card c82=new Card(R.mipmap.burningtothelast_supersaiyangoku_angel__superkaioken__art,R.mipmap.burningtothelast_supersaiyangoku_angel__superkaioken__icon,"Burning to the Last Super Saiyan Goku (Angel) (Super Kaioken)","PHY Type Ki +2 and HP, ATK and DEF +50%","Super Kaioken Kamehameha"," Causes immense damage to enemy while sacrificing 7% HP","Thundering Aura","Ki +3 and ATK +100% when HP is 50% or above",14363,13371,9190,42,"UR","Super END");
+
+    private static Card c83=new Card(R.mipmap.majinontheloosemajinbuu_good_art,R.mipmap.majinontheloosemajinbuu_good__icon,"Majin on the Loose Majin Buu (Good)","All Types ATK +30%","Flame Shower Breath "," Extreme damage to enemy and lowers DEF","Redemption","Recover 25% HP whenever HP is 40% or below",13835,12493,10575,36,"UR","Extreme END");
+
+    private static Card c84=new Card(R.mipmap.brainsandbrawncombined_supersaiyantrunks_gt__art,R.mipmap.brainsandbrawncombined_supersaiyantrunks_gt__icon,"Brains and Brawn Combined Super Saiyan Trunks (GT)","TEQ & STR Type Ki +2, HP, ATK & DEF +30%","Buster Cannon","Causes supreme damage to enemy and greatly lowers DEF","Concentrated Powe","ATK +100% when performing a Super Attack",14227,13669,8998,42,"UR","Super END");
+
+    private static Card c85=new Card(R.mipmap.loveofthethrone_majinbuu_gotenks__art,R.mipmap.loveofthethrone_majinbuu_gotenks__icon,"Love of the Throne Majin Buu (Gotenks)","PHY Type Ki +3 and HP & ATK +70%","Kamehameha","Causes supreme damage to enemy and seals Super Attack","Evil's Territory"," Super Type enemies' DEF -50%; ATK +100%",14720,13456,8718,42,"UR","Extreme END");
+
+    private static Card c86=new Card(R.mipmap.clevertactics_android_no_18_art,R.mipmap.clevertactics_android_no_18_icon,"Clever tactics Android#18","STR and PHY Type Ki +3 and HP, ATK & DEF +30%","Power Blitz "," Causes supreme damage to enemy and raises ATK for 6 turns","Extra Rewards","ATK +50% at start of turn; plus an additional ATK & DEF +50% when HP is 50% or above",13868,13733,9284,40,"UR","Super PUI");
+
+    private static Card c87=new Card(R.mipmap.ascendingtogodhood_supersaiyangodssvegeta_art,R.mipmap.ascendingtogodhood_supersaiyangodssvegeta_icon,"Ascending to Godhood Super Saiyan God SS Vegeta","PHY Type ATK +33% per PHY Ki Sphere obtained","God Final Flash","Supreme damage, rare chance to stun the enemy","Overwhelming Force","Change Rainbow Ki Spheres to PHY Ki Spheres; ATK & DEF +20%",14605,12544,9728,42,"UR","Super END");
+
+
+
 
     public static final Card[] cardDatabase = {
             c1,
@@ -234,16 +258,9 @@ public class CardInfoDatabase {
             c65,
             c66,
             c67,
-            c68,
-            c69,
-            c70,
-            c71,
-            c72,
-            c73,
-            c74,
-            c75,
-            c76,
-            c77
+            c68,c69,c70,c71,c72,c73,c74,c75,c76,c77,
+            c78,c79,c80,c81,c82,c83,c84,c85,c86,c87
+
     };
 
     // 120% Lead & Category Lead Arrays
@@ -262,7 +279,7 @@ public class CardInfoDatabase {
             c11, c12, c13, c14, c15, c16, c17, c18, c19, c20, c21, c22, c23, c24,
             c25, c26, c27, c28, c29, c30, c31, c32, c33, c34, c35, c36, c37, c38, c39, c40, c41, c42, c43, c44,
             c45, c46, c47, c48, c49, c50, c51, c52, c53, c54, c58, c59, c60, c61, c62, c63, c64, c65, c66, c67,
-            c68,c69, c70,c71,c72,c73,c74,c75,c76,c77
+            c68,c69,c70,c71,c72,c73,c74,c75,c76,c77,c78,c79,c80,c81,c82,c83,c84,c85,c86,c87
     };
 
     public static Card[] SSRCards = {};
