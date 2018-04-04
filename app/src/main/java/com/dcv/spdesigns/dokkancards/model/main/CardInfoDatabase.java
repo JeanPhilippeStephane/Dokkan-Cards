@@ -187,7 +187,27 @@ public class CardInfoDatabase {
 
     private static Card c87=new Card(R.mipmap.ascendingtogodhood_supersaiyangodssvegeta_art,R.mipmap.ascendingtogodhood_supersaiyangodssvegeta_icon,"Ascending to Godhood Super Saiyan God SS Vegeta","PHY Type ATK +33% per PHY Ki Sphere obtained","God Final Flash","Supreme damage, rare chance to stun the enemy","Overwhelming Force","Change Rainbow Ki Spheres to PHY Ki Spheres; ATK & DEF +20%",14605,12544,9728,42,"UR","Super END");
 
+    private static Card c88= new Card(R.mipmap.pointblankflash_super_saiyan_2_gohan_youth_art,R.mipmap.pointblankflash_super_saiyan_2_gohan_youth_icon,"Point-Blank Flash Super Saiyan 2 Gohan (Youth)","AGL and STR Type Ki +3 and HP, ATK & DEF +30%",	"Super Kamehameha","Causes supreme damage and raises ATK for 3 turns","Earth-Defending Faith", "AGL and STR Type Ki +2 and ATK & DEF +25%",13989,12911,9977,40,"UR","Super AGL");
 
+    private static Card c89=new Card(R.mipmap.lowclasshighoctane_bardock_giant_ape_art,R.mipmap.lowclasshighoctane_bardock_giant_ape_icon,"Low-Class, High-Octane Bardock (Giant Ape)","All Types HP & ATK +50%","Final Spirit Cannon","Greatly raises ATK for 1 turn and causes supreme damage to enemy","Intuition Born of Experience","ATK +100% when HP is 30% or above; chance to turn into Giant Ape (up to 2 times)",14081,13716,9025,42,"UR","Super TEC");
+
+   private static Card c90=new Card(R.mipmap.imprinteddiscipline_whis_art,R.mipmap.imprinteddiscipline_whis_icon,"Imprinted Discipline Whis","AGL, TEQ and STR Type Ki +2, HP, ATK & DEF +30%","Prelude to Destruction","Causes supreme damage to enemy and lowers ATK","God of Destruction's Master","Attacked enemy's ATK -20%; high chance to stun the attacked enemy",13621,12833,10358,40,"UR","Super TEC");
+
+    private static Card c91=new Card(R.mipmap.devastatingfusionpower_super_saiyan_gotenks_art,R.mipmap.devastatingfusionpower_super_saiyan_gotenks_icon,"Devastating Fusion Power Super Saiyan Gotenks","All Types Ki +3","Galactic Donut"," Causes supreme damage and seals Super Attack","Full of Energy","ATK +100% when performing a Super Attack",14347,13120,9324,42,"UR","Super END");
+
+    private static Card c92=new Card(R.mipmap.miraculouskamehameha_super_saiyan_goku_art,R.mipmap.miraculouskamehameha_super_saiyan_goku_icon,"Miraculous Kamehameha Super Saiyan Goku","AGL, INT and STR Type HP, ATK and DEF +30%","Family Kamehameha"," Causes supreme damage to enemy","Miracles Descend","Disable rampage; when HP is 30% or above, Ki +3 and ATK +5000",14389,13679,8717,36,"UR","Super PUI");
+
+    private static Card c93=new Card(R.mipmap.bondsbeyondtime_super_saiyan_god_ss_vegeta_art,R.mipmap.bondsbeyondtime_super_saiyan_god_ss_vegeta_icon,"Bonds Beyond Time Super Saiyan God SS Vegeta","\tAll Types HP, ATK & DEF +25%","Father-Son Galick Gun","Causes supreme damage, allies' ATK +20% for 1 turn","Mortals' True Power "," ATK & DEF +70% when facing only 1 enemy",13897,13495,9393,36,"UR","Siper TEC");
+
+   private static Card c94=new Card(R.mipmap.theparamount_saiyan_super_saiyan_god_s_goku_art,R.mipmap.theparamount_saiyan_super_saiyan_god_s_goku_icon,"The Paramount Saiyan Super Saiyan God SS Goku","AGL, STR and PHY Type HP & ATK +30%","Kamehameha","Causes supreme damage to enemy ","Godly Eruption"," ATK +100% when performing a Super Attack",13713,13544,9517,42,"UR","Super AGL");
+
+    private static Card c95=new Card(R.mipmap.awillbeyondtime_super_saiyan_trunks_future_art,R.mipmap.awillbeyondtime_super_saiyan_trunks__future_icon,"A Will Beyond Time Super Saiyan Trunks (Future)","All Types HP, ATK & DEF +2500","Father-Son Galick Gun","Causes supreme damage, allies' ATK +20% for 1 turn ","Humanity's Last Hope"," ATK & DEF +25% for all allies",14605,12985,9177,36,"UR","Super END");
+
+    private static Card c96=new Card(R.mipmap.rampagingvengeance_super_baby_2__giant_ape_art,R.mipmap.rampagingvengeance_super_baby_2__giant_ape_icon,"Rampaging Vengeance Super Baby 2 (Giant Ape)","INT Type ATK +33% per INT Ki Sphere obtained","Revenge Death Ball","Supreme damage to enemy and lowers ATK","Blutz Waves of Hatred","ATK +100% when HP is 30% or above; may turn into Giant Ape",13947,13232,9584,42,"UR","Extreme INT");
+
+    private static Card c97=new Card(R.mipmap.steelyhatred_metal_coora_art,R.mipmap.steelyhatred_metal_coora_icon,"Steely Hatred Metal Coora","All Types Ki +3 and HP, ATK & DEF +20%","Supernova","Causes supreme damage to enemy and greatly lowers DEF","Malevolent Assault","ATK +30% for all allies and Extreme Type Ki +2",13402,13665,9690,40,"UR","Extreme INT");
+
+    
 
 
     public static final Card[] cardDatabase = {
@@ -259,7 +279,10 @@ public class CardInfoDatabase {
             c66,
             c67,
             c68,c69,c70,c71,c72,c73,c74,c75,c76,c77,
-            c78,c79,c80,c81,c82,c83,c84,c85,c86,c87
+            c78,c79,c80,c81,c82,c83,c84,c85,c86,c87,c88,
+            c89,c90,c91,
+            c92,
+            c93,c94,c95,c96,c97
 
     };
 
@@ -279,7 +302,10 @@ public class CardInfoDatabase {
             c11, c12, c13, c14, c15, c16, c17, c18, c19, c20, c21, c22, c23, c24,
             c25, c26, c27, c28, c29, c30, c31, c32, c33, c34, c35, c36, c37, c38, c39, c40, c41, c42, c43, c44,
             c45, c46, c47, c48, c49, c50, c51, c52, c53, c54, c58, c59, c60, c61, c62, c63, c64, c65, c66, c67,
-            c68,c69,c70,c71,c72,c73,c74,c75,c76,c77,c78,c79,c80,c81,c82,c83,c84,c85,c86,c87
+            c68,c69,c70,c71,c72,c73,c74,c75,c76,c77,c78,c79,c80,c81,c82,c83,c84,c85,c86,c87,c88,c89,c90,c91
+            ,c92
+            ,c93
+            ,c94,c95,c96,c97
     };
 
     public static Card[] SSRCards = {};
