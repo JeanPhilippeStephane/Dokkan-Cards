@@ -207,8 +207,47 @@ public class CardInfoDatabase {
 
     private static Card c97=new Card(R.mipmap.steelyhatred_metal_coora_art,R.mipmap.steelyhatred_metal_coora_icon,"Steely Hatred Metal Coora","All Types Ki +3 and HP, ATK & DEF +20%","Supernova","Causes supreme damage to enemy and greatly lowers DEF","Malevolent Assault","ATK +30% for all allies and Extreme Type Ki +2",13402,13665,9690,40,"UR","Extreme INT");
 
-    
+    private static Card c98=new Card(R.mipmap.tyrannicalmaelstrom_full_power_boujack_art,R.mipmap.tyrannicalmaelstrom_full_power_boujack_icon,"Tyrannical Maelstrom Full Power Boujack","AGL and INT Type Ki +2 and ATK & DEF +50%","Galactic Buster","Causes supreme damage to enemy and greatly lowers DEF","Incomparable Tyranny"," ATK +90% at start of turn",13621,12691,10436,40,"UR","Extreme AGL");
 
+    private static Card c99=new Card(R.mipmap.accruedstrength_super_saiyan_goku_art,R.mipmap.accruedstrength_super_saiyan_goku_icon,"Accelerated Battle Super Saiyan God Goku","INT and STR Type Ki +2, ATK and DEF +50%","Limitbreaker Kamehameha","Causes supreme damage to enemy and lowers DEF","What Lies Beyond Godhood?","ATK & DEF +80% when HP is 30% or above",14389,13426,8933,40,"UR","Super INT");
+
+    private static Card c100=new Card(R.mipmap.strugglebeyondallexpectations_super_saiyan_goten_kid_art,R.mipmap.strugglebeyondallexpectations_super_saiyan_goten_kid_icon,"Struggle Beyond All Expectations Super Saiyan Goten (Kid)","AGL Type Ki +2 and HP & DEF +70%","Kamehameha","Causes supreme damage to enemy and raises ATK for 3 turns","Innate Intuition","ATK +90% at start of turn",13621,12764,10344,40,"UR","Super AGL");
+
+    private static Card c101=new Card(R.mipmap.ragingdash_majin_buu_south_supreme_kai_art,R.mipmap.ragingdash_majin_buu_south_supreme_kai_icon,"Raging Dash Majin Buu (South Supreme Kai)","TEQ Type ATK & DEF +60%","Mighty Powerful God Shockwave","Causes supreme damage to enemy and greatly lowers DEF","Full-Power Body","Ki +2 and ATK +70% when HP is 99% or below",14081,14083,8566,42,"UR","Extreme TEC");
+
+    private static Card c102=new Card(R.mipmap.proudbloodline_bulpan_art,R.mipmap.proudbloodline_bulpan_icon,"Proud Bloodline Bulpan","AGL Type HP & DEF +70%","Galick Gun"," Causes supreme damage to enemy ","Grand Wish","All allies' Ki +3 when HP is 30% or above",13621,12801,10298,38,"UR","Super AGL");
+
+    private static Card c103=new Card(R.mipmap.atrociouscrackdown_raditz_giant_ape_art,R.mipmap.atrociouscrackdown_raditz_giant_ape_icon,"Atrocious Crackdown Raditz (Giant Ape)","When HP is 30% or above, Ki +3 and ATK & DEF +30%","Double Sunday","Causes supreme damage to enemy ","Rebellious Low-Class Warrior","ATK & DEF +12% per Ki Sphere obtained; may turn into Giant Ape (2 times at most",14021,13201,9498,46,"UR","Extreme PUI");
+
+    private static Card c104=new Card(R.mipmap.guidetothenewbeyond_whis_art,R.mipmap.guidetothenewbeyond_whis_icon,"Guide to the New Beyond Whis","AGL, INT and PHY Type Ki +3, HP, ATK & DEF +20%","Prelude to Destruction","Causes supreme damage to enemy and lowers ATK","Heightened Spirit","Ki +2 and ATK & DEF +20% for all allies",13929,12654,10128,40,"UR","Super INT");
+
+    private static Card c105=new Card(R.mipmap.uncontrollable_instinct_buu_kid_art,R.mipmap.uncontrollable_instinct_buu_kid_icon,"Uncontrollable Instinct Buu (Kid)","HP +70%","Planet Burst","Causes supreme damage and lowers DEF","Skill Copy"," Recover 12% HP at start of turn",14564,13099,9040,42,"UR","Extreme AGL");
+
+    private static Card c106=new Card(R.mipmap.zealousroar_super_saiyan_goku_art,R.mipmap.zealousroar_super_saiyan_goku_icon,"Zealous Roar Super Saiyan Goku","AGL, TEQ, and STR Type Ki +2 and HP, ATK & DEF +40%","Angry Kamehameha","Greatly raises ATK for 1 turn and causes supreme damage to enemy","Gambling on Surviva"," ATK +90%; survives K.O. attacks when HP is 20% or above",14021,13274,9406,40,"UR","Super PUI");
+
+    private static Card c107=new Card(R.mipmap.tenaciousbattlefielddiva_fasha_giant_ape_art,R.mipmap.tenaciousbattlefielddiva_fasha_giant_ape_icon,"Tenacious Battlefield Diva Fasha (Giant Ape)","Ki +3 and ATK & DEF +30% when HP is 30% or above","Energy Bullet","Causes supreme damage to enemy and raises allies' ATK by 20% for 1 turn","Unique Outlook","Changes INT Ki Spheres to STR Ki Spheres; ATK & DEF +30%; chance to turn into Giant Ape (up to 2 times)",14021,13348,9315,42,"UR","Super PUI");
+
+    private static Card c108=new Card(R.mipmap.victoryathand_gotenks_art,R.mipmap.victoryathand_gotenks_icon,"Victory at Hand Gotenks","Ki +3 and ATK & DEF +30% when HP is 30% or above","Kamehameha","Causes supreme damage to enemy and raises allies' ATK by 20% for 1 turn","Resounding Laugh","ATK +77% at start of turn, plus an additional ATK +23% as the 1st attacker in a turn",13585,14073,9001,42,"UR","Super PUI");
+
+    private static Card c109=new Card(R.mipmap.silentexecutioner_majin_buu_pure_evil_art,R.mipmap.silentexecutioner_majin_buu_pure_evil_icon,"Silent Executioner Majin Buu (Pure Evil)","TEQ, INT & STR Type Ki +3 and HP & ATK +30%","Super Kamehameha","Causes supreme damage and raises ATK for 3 turns","Vicious Judgment","ATK +18000 when HP is 99% or below",13211,14103,9338,40,"UR","Extreme PUI");
+
+    private static Card c110=new Card(R.mipmap.trustworthyrival_vegeta_art,R.mipmap.trustworthyrival_vegeta_icon,"Trustworthy Rival Vegeta","INT and PHY Type Ki +3 and HP, ATK & DEF +30%","Big Bang Attack"," Causes supreme damage and raises ATK for 3 turns","Desperate Shout","ATK +20% per INT Ki Sphere obtained, recover HP with candy",13585,13711,9354,42,"UR","Super INT");
+
+    private static Card c111=new Card(R.mipmap.fatherandsonlimitbreakers_barlot_art,R.mipmap.fatherandsonlimitbreakers_barlot_icon,"Father and Son Limit-Breakers Barlot","STR Type Ki +3 and ATK & DEF +70% when HP is 30% or above","Spirit Cannon"," Greatly raises ATK for 1 turn and causes supreme damage to enemy ","Joined Souls"," ATK +15% & DEF +10% per Ki Sphere obtained",14021,13495,9131,40,"UR","Super PUI");
+
+    private static Card c112=new Card(R.mipmap.expandingpossibility_hit_art,R.mipmap.expandingpossibility_hit_icon,"Expanding Possibility Hit","Enemies' ATK & DEF -30%","Time Skip","Causes supreme damage with chance to stun the enemy","A Solid Blow "," ATK +80%; disables enemy's guard with a high chance of stunning the attacked enemy",14021,13132,9485,42,"UR","Extreme INT");
+
+    private static Card c113=new Card(R.mipmap.hellforgedwarrior_hell_fighter_17_art,R.mipmap.hellforgedwarrior_hell_fighter_17_icon,"Hell-Forged Warrior Hell Fighter #17","INT and PHY Type Ki +3 and HP, ATK & DEF +30%","Hell Breaker","Causes supreme damage with a rare chance to stun the enemy","Target Confirmed","ATK +90% and Ki +2 when facing only 1 enemy",13761,13381,9491,42,"UR","Extreme INT");
+
+    private static Card c114=new Card(R.mipmap.staggeringforce_frieza_1st_form_art,R.mipmap.staggeringforce_frieza_1st_form_icon,"Staggering Force Frieza (1st Form)","All Types ATK +4000","Death Ball","Causes supreme damage to enemy ","Never-Ending Horror","ATK +8000 & DEF +4000 at start of turn",13759,14440,8429,38,"UR","Extreme PUI");
+
+    private static Card c115=new Card(R.mipmap.convergentfury_super_trunks_art,R.mipmap.convergentfury_super_trunks_icon,"Convergent Fury Super Trunks","All Types ATK +40%","Buster Cannon","Causes supreme damage to enemy and raises ATK for 3 turns","Duel of Might "," Ki +4 and ATK +60% at start of turn, and weaken Regeneration",14421,13169,9039,42,"UR","Super END");
+
+    private static Card c116=new Card(R.mipmap.accruedstrength_super_saiyan_goku_art,R.mipmap.accruedstrength_super_saiyan_goku_icon,"Accrued Strength Super Saiyan Goku","INT Type Ki +2 and HP & DEF +70%","Instant Transmission Kamehameha"," Causes supreme damage with a rare chance to stun the enemy","Principles of Knowledge","Changes AGL Ki to INT Ki; ATK +40%",13929,13021,9669,40,"UR","Super INT");
+
+    private static Card c117=new Card(R.mipmap.protectorofhope_super_saiyan_gohan_future_art,R.mipmap.protectorofhope_super_saiyan_gohan_future_icon,"Protector of Hope Super Saiyan Gohan (Future)","TEQ Type ATK +70%","Kamehameha"," Greatly raises ATK and causes extreme damage to enemy","Smoldering Will","ATK & DEF +70% when HP is 80% or below",13820,13636,9131,36,"UR","Super TEC");
+
+    
 
     public static final Card[] cardDatabase = {
             c1,
@@ -280,9 +319,9 @@ public class CardInfoDatabase {
             c67,
             c68,c69,c70,c71,c72,c73,c74,c75,c76,c77,
             c78,c79,c80,c81,c82,c83,c84,c85,c86,c87,c88,
-            c89,c90,c91,
-            c92,
-            c93,c94,c95,c96,c97
+            c89,c90,c91, c92, c93,c94,c95,c96,c97,
+            c98,c99,c100,c101,c102,c103,c104,c105,c106,c107,
+            c108,c109,c110, c111,c112,c113,c114,c115,c116,c117
 
     };
 
@@ -302,10 +341,9 @@ public class CardInfoDatabase {
             c11, c12, c13, c14, c15, c16, c17, c18, c19, c20, c21, c22, c23, c24,
             c25, c26, c27, c28, c29, c30, c31, c32, c33, c34, c35, c36, c37, c38, c39, c40, c41, c42, c43, c44,
             c45, c46, c47, c48, c49, c50, c51, c52, c53, c54, c58, c59, c60, c61, c62, c63, c64, c65, c66, c67,
-            c68,c69,c70,c71,c72,c73,c74,c75,c76,c77,c78,c79,c80,c81,c82,c83,c84,c85,c86,c87,c88,c89,c90,c91
-            ,c92
-            ,c93
-            ,c94,c95,c96,c97
+            c68,c69,c70,c71,c72,c73,c74,c75,c76,c77,c78,c79,c80,c81,c82,c83,c84,c85,c86,c87,c88,c89,c90,c91,c92,
+            c93,c94,c95,c96,c97,c98,c99,c100,c101,c102,c103,c104,c105,c106,c107, c108,c109,c110, c111,c112,c113,
+            c114,c115,c116,c117
     };
 
     public static Card[] SSRCards = {};
